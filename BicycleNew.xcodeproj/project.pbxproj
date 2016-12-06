@@ -7,14 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		148CAFB701D5788ECDB37D83 /* Pods_BicycleNew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A05B91020C1BDE2B1A6CC94 /* Pods_BicycleNew.framework */; };
+		280372041DF027DE00FDCC47 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280372031DF027DE00FDCC47 /* Item.swift */; };
+		280372061DF0280300FDCC47 /* ItemAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280372051DF0280300FDCC47 /* ItemAddress.swift */; };
+		280372081DF0282600FDCC47 /* SearchKMA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280372071DF0282600FDCC47 /* SearchKMA.swift */; };
+		2803720A1DF028C200FDCC47 /* ItemRSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280372091DF028C200FDCC47 /* ItemRSS.swift */; };
+		2803720C1DF029C700FDCC47 /* SearchAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2803720B1DF029C700FDCC47 /* SearchAddress.swift */; };
+		2803720E1DF02A1700FDCC47 /* BicycleAlertViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2803720D1DF02A1700FDCC47 /* BicycleAlertViewControllerExtension.swift */; };
+		2851D2321DF03E7F00A1FC5D /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851D2301DF03E7F00A1FC5D /* DaumMap.framework */; };
+		2851D2331DF03E7F00A1FC5D /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851D2311DF03E7F00A1FC5D /* KakaoOpenSDK.framework */; };
+		2851D2351DF03ED100A1FC5D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851D2341DF03ED100A1FC5D /* OpenGLES.framework */; };
+		2851D2371DF03EDD00A1FC5D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851D2361DF03EDD00A1FC5D /* SystemConfiguration.framework */; };
+		2851D2391DF03EE500A1FC5D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851D2381DF03EE500A1FC5D /* CoreLocation.framework */; };
+		2851D23B1DF03EED00A1FC5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851D23A1DF03EED00A1FC5D /* QuartzCore.framework */; };
+		2851D23D1DF03EFA00A1FC5D /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851D23C1DF03EFA00A1FC5D /* libstdc++.6.tbd */; };
+		2851D23F1DF03EFF00A1FC5D /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851D23E1DF03EFF00A1FC5D /* libxml2.tbd */; };
+		2851D2411DF03F0800A1FC5D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851D2401DF03F0800A1FC5D /* libsqlite3.tbd */; };
+		2851D2431DF03F0E00A1FC5D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851D2421DF03F0E00A1FC5D /* MapKit.framework */; };
+		2851D2451DF03FCA00A1FC5D /* BicycleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2851D2441DF03FCA00A1FC5D /* BicycleConstants.swift */; };
+		286C8CC71DF523E900D1717B /* BicycleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286C8CC61DF523E900D1717B /* BicycleMapViewController.swift */; };
 		287B24881DEED72600D654AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287B24871DEED72600D654AA /* AppDelegate.swift */; };
 		287B248A1DEED72600D654AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287B24891DEED72600D654AA /* ViewController.swift */; };
 		287B248D1DEED72600D654AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 287B248B1DEED72600D654AA /* Main.storyboard */; };
 		287B248F1DEED72600D654AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 287B248E1DEED72600D654AA /* Assets.xcassets */; };
 		287B24921DEED72600D654AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 287B24901DEED72600D654AA /* LaunchScreen.storyboard */; };
+		287B249C1DEED78E00D654AA /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 287B249B1DEED78E00D654AA /* SWRevealViewController.m */; };
+		287B24A51DEEDE9500D654AA /* BicycleNavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287B24A41DEEDE9500D654AA /* BicycleNavigationControllerExtension.swift */; };
+		287B24A71DEEDFF100D654AA /* BicycleMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287B24A61DEEDFF100D654AA /* BicycleMainViewController.swift */; };
+		287B24AB1DEEE4A200D654AA /* BicycleRevealMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287B24AA1DEEE4A200D654AA /* BicycleRevealMenuTableViewController.swift */; };
+		287B24AD1DEEE67D00D654AA /* BicycleTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287B24AC1DEEE67D00D654AA /* BicycleTabBarController.swift */; };
+		28C1A3B71DF2B187003B1068 /* BicycleMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1A3B61DF2B187003B1068 /* BicycleMenuTableViewController.swift */; };
+		28D2F8471DF186E200F59A7B /* BicycleManagerHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D2F8461DF186E200F59A7B /* BicycleManagerHolder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		280372031DF027DE00FDCC47 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		280372051DF0280300FDCC47 /* ItemAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemAddress.swift; sourceTree = "<group>"; };
+		280372071DF0282600FDCC47 /* SearchKMA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchKMA.swift; sourceTree = "<group>"; };
+		280372091DF028C200FDCC47 /* ItemRSS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemRSS.swift; sourceTree = "<group>"; };
+		2803720B1DF029C700FDCC47 /* SearchAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAddress.swift; sourceTree = "<group>"; };
+		2803720D1DF02A1700FDCC47 /* BicycleAlertViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleAlertViewControllerExtension.swift; sourceTree = "<group>"; };
+		2851D2301DF03E7F00A1FC5D /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DaumMap.framework; sourceTree = "<group>"; };
+		2851D2311DF03E7F00A1FC5D /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
+		2851D2341DF03ED100A1FC5D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		2851D2361DF03EDD00A1FC5D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2851D2381DF03EE500A1FC5D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2851D23A1DF03EED00A1FC5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2851D23C1DF03EFA00A1FC5D /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		2851D23E1DF03EFF00A1FC5D /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		2851D2401DF03F0800A1FC5D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		2851D2421DF03F0E00A1FC5D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2851D2441DF03FCA00A1FC5D /* BicycleConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleConstants.swift; sourceTree = "<group>"; };
+		286C8CC61DF523E900D1717B /* BicycleMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleMapViewController.swift; sourceTree = "<group>"; };
 		287B24841DEED72600D654AA /* BicycleNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BicycleNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		287B24871DEED72600D654AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		287B24891DEED72600D654AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +66,18 @@
 		287B248E1DEED72600D654AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		287B24911DEED72600D654AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		287B24931DEED72600D654AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		287B24991DEED78D00D654AA /* BicycleNew-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BicycleNew-Bridging-Header.h"; sourceTree = "<group>"; };
+		287B249A1DEED78E00D654AA /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		287B249B1DEED78E00D654AA /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		287B24A41DEEDE9500D654AA /* BicycleNavigationControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleNavigationControllerExtension.swift; sourceTree = "<group>"; };
+		287B24A61DEEDFF100D654AA /* BicycleMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleMainViewController.swift; sourceTree = "<group>"; };
+		287B24AA1DEEE4A200D654AA /* BicycleRevealMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleRevealMenuTableViewController.swift; sourceTree = "<group>"; };
+		287B24AC1DEEE67D00D654AA /* BicycleTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleTabBarController.swift; sourceTree = "<group>"; };
+		28C1A3B61DF2B187003B1068 /* BicycleMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleMenuTableViewController.swift; sourceTree = "<group>"; };
+		28D2F8461DF186E200F59A7B /* BicycleManagerHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleManagerHolder.swift; sourceTree = "<group>"; };
+		5E0E6E9B77E702F6FE27E234 /* Pods-BicycleNew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BicycleNew.release.xcconfig"; path = "Pods/Target Support Files/Pods-BicycleNew/Pods-BicycleNew.release.xcconfig"; sourceTree = "<group>"; };
+		62D31EAACBCDB2D3574A755F /* Pods-BicycleNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BicycleNew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BicycleNew/Pods-BicycleNew.debug.xcconfig"; sourceTree = "<group>"; };
+		7A05B91020C1BDE2B1A6CC94 /* Pods_BicycleNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BicycleNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +85,88 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2851D2431DF03F0E00A1FC5D /* MapKit.framework in Frameworks */,
+				2851D2411DF03F0800A1FC5D /* libsqlite3.tbd in Frameworks */,
+				2851D23F1DF03EFF00A1FC5D /* libxml2.tbd in Frameworks */,
+				2851D23D1DF03EFA00A1FC5D /* libstdc++.6.tbd in Frameworks */,
+				2851D23B1DF03EED00A1FC5D /* QuartzCore.framework in Frameworks */,
+				2851D2391DF03EE500A1FC5D /* CoreLocation.framework in Frameworks */,
+				2851D2371DF03EDD00A1FC5D /* SystemConfiguration.framework in Frameworks */,
+				2851D2351DF03ED100A1FC5D /* OpenGLES.framework in Frameworks */,
+				2851D2321DF03E7F00A1FC5D /* DaumMap.framework in Frameworks */,
+				2851D2331DF03E7F00A1FC5D /* KakaoOpenSDK.framework in Frameworks */,
+				148CAFB701D5788ECDB37D83 /* Pods_BicycleNew.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C4DA57453A27F84C40C2EDA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62D31EAACBCDB2D3574A755F /* Pods-BicycleNew.debug.xcconfig */,
+				5E0E6E9B77E702F6FE27E234 /* Pods-BicycleNew.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		280372021DF027A500FDCC47 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				280372031DF027DE00FDCC47 /* Item.swift */,
+				280372051DF0280300FDCC47 /* ItemAddress.swift */,
+				280372091DF028C200FDCC47 /* ItemRSS.swift */,
+				2803720B1DF029C700FDCC47 /* SearchAddress.swift */,
+				280372071DF0282600FDCC47 /* SearchKMA.swift */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		2803720F1DF02A2000FDCC47 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				287B24A41DEEDE9500D654AA /* BicycleNavigationControllerExtension.swift */,
+				2803720D1DF02A1700FDCC47 /* BicycleAlertViewControllerExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		280372101DF0325500FDCC47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2851D2401DF03F0800A1FC5D /* libsqlite3.tbd */,
+				2851D23E1DF03EFF00A1FC5D /* libxml2.tbd */,
+				2851D23C1DF03EFA00A1FC5D /* libstdc++.6.tbd */,
+				2851D2421DF03F0E00A1FC5D /* MapKit.framework */,
+				2851D23A1DF03EED00A1FC5D /* QuartzCore.framework */,
+				2851D2381DF03EE500A1FC5D /* CoreLocation.framework */,
+				2851D2361DF03EDD00A1FC5D /* SystemConfiguration.framework */,
+				2851D2341DF03ED100A1FC5D /* OpenGLES.framework */,
+				2851D2301DF03E7F00A1FC5D /* DaumMap.framework */,
+				2851D2311DF03E7F00A1FC5D /* KakaoOpenSDK.framework */,
+				7A05B91020C1BDE2B1A6CC94 /* Pods_BicycleNew.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		286C8CC51DF5235900D1717B /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				287B24991DEED78D00D654AA /* BicycleNew-Bridging-Header.h */,
+				28D2F8461DF186E200F59A7B /* BicycleManagerHolder.swift */,
+				2851D2441DF03FCA00A1FC5D /* BicycleConstants.swift */,
+			);
+			name = Miscellaneous;
+			sourceTree = "<group>";
+		};
 		287B247B1DEED72600D654AA = {
 			isa = PBXGroup;
 			children = (
 				287B24861DEED72600D654AA /* BicycleNew */,
 				287B24851DEED72600D654AA /* Products */,
+				280372101DF0325500FDCC47 /* Frameworks */,
+				1C4DA57453A27F84C40C2EDA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +181,48 @@
 		287B24861DEED72600D654AA /* BicycleNew */ = {
 			isa = PBXGroup;
 			children = (
+				280372021DF027A500FDCC47 /* Search */,
+				287B249D1DEED79E00D654AA /* RevealView */,
 				287B24871DEED72600D654AA /* AppDelegate.swift */,
 				287B24891DEED72600D654AA /* ViewController.swift */,
+				28C1A3B51DF29B2A003B1068 /* ViewControllers */,
+				2803720F1DF02A2000FDCC47 /* Extensions */,
+				28C1A3B81DF2B190003B1068 /* Interface */,
+				286C8CC51DF5235900D1717B /* Miscellaneous */,
 				287B248B1DEED72600D654AA /* Main.storyboard */,
 				287B248E1DEED72600D654AA /* Assets.xcassets */,
 				287B24901DEED72600D654AA /* LaunchScreen.storyboard */,
 				287B24931DEED72600D654AA /* Info.plist */,
 			);
 			path = BicycleNew;
+			sourceTree = "<group>";
+		};
+		287B249D1DEED79E00D654AA /* RevealView */ = {
+			isa = PBXGroup;
+			children = (
+				287B249A1DEED78E00D654AA /* SWRevealViewController.h */,
+				287B249B1DEED78E00D654AA /* SWRevealViewController.m */,
+			);
+			name = RevealView;
+			sourceTree = "<group>";
+		};
+		28C1A3B51DF29B2A003B1068 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				287B24A61DEEDFF100D654AA /* BicycleMainViewController.swift */,
+				286C8CC61DF523E900D1717B /* BicycleMapViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		28C1A3B81DF2B190003B1068 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				287B24AA1DEEE4A200D654AA /* BicycleRevealMenuTableViewController.swift */,
+				287B24AC1DEEE67D00D654AA /* BicycleTabBarController.swift */,
+				28C1A3B61DF2B187003B1068 /* BicycleMenuTableViewController.swift */,
+			);
+			name = Interface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 287B24961DEED72600D654AA /* Build configuration list for PBXNativeTarget "BicycleNew" */;
 			buildPhases = (
+				A61465C4B48FB7E8E9692C55 /* [CP] Check Pods Manifest.lock */,
 				287B24801DEED72600D654AA /* Sources */,
 				287B24811DEED72600D654AA /* Frameworks */,
 				287B24821DEED72600D654AA /* Resources */,
+				93389CED8DE044569EF8463C /* [CP] Embed Pods Frameworks */,
+				7E49A60E66C489EDFFDA6184 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +261,7 @@
 					287B24831DEED72600D654AA = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 456564KGM3;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,13 +297,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7E49A60E66C489EDFFDA6184 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BicycleNew/Pods-BicycleNew-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93389CED8DE044569EF8463C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BicycleNew/Pods-BicycleNew-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A61465C4B48FB7E8E9692C55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		287B24801DEED72600D654AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				287B248A1DEED72600D654AA /* ViewController.swift in Sources */,
+				280372081DF0282600FDCC47 /* SearchKMA.swift in Sources */,
+				280372061DF0280300FDCC47 /* ItemAddress.swift in Sources */,
+				287B24A51DEEDE9500D654AA /* BicycleNavigationControllerExtension.swift in Sources */,
 				287B24881DEED72600D654AA /* AppDelegate.swift in Sources */,
+				287B24AB1DEEE4A200D654AA /* BicycleRevealMenuTableViewController.swift in Sources */,
+				28C1A3B71DF2B187003B1068 /* BicycleMenuTableViewController.swift in Sources */,
+				2803720C1DF029C700FDCC47 /* SearchAddress.swift in Sources */,
+				2803720E1DF02A1700FDCC47 /* BicycleAlertViewControllerExtension.swift in Sources */,
+				2803720A1DF028C200FDCC47 /* ItemRSS.swift in Sources */,
+				280372041DF027DE00FDCC47 /* Item.swift in Sources */,
+				287B24AD1DEEE67D00D654AA /* BicycleTabBarController.swift in Sources */,
+				28D2F8471DF186E200F59A7B /* BicycleManagerHolder.swift in Sources */,
+				2851D2451DF03FCA00A1FC5D /* BicycleConstants.swift in Sources */,
+				287B24A71DEEDFF100D654AA /* BicycleMainViewController.swift in Sources */,
+				287B249C1DEED78E00D654AA /* SWRevealViewController.m in Sources */,
+				286C8CC71DF523E900D1717B /* BicycleMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -247,7 +475,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -257,26 +485,49 @@
 		};
 		287B24971DEED72600D654AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62D31EAACBCDB2D3574A755F /* Pods-BicycleNew.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 456564KGM3;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BicycleNew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = IJI.BicycleNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BicycleNew/BicycleNew-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		287B24981DEED72600D654AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E0E6E9B77E702F6FE27E234 /* Pods-BicycleNew.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 456564KGM3;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BicycleNew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = IJI.BicycleNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BicycleNew/BicycleNew-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -300,6 +551,7 @@
 				287B24981DEED72600D654AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,6 @@
+framework module Pods_BicycleNew {
+  umbrella header "Pods-BicycleNew-umbrella.h"
+
+  export *
+  module * { export * }
+}
