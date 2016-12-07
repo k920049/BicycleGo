@@ -40,6 +40,7 @@ class BicycleMainViewController: UIViewController, CLLocationManagerDelegate {
     var townCode : String = ""
     
     var DMapView : MTMapView?
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var timer = Timer()
    
     var startLocation:CLLocation!
@@ -260,7 +261,7 @@ class BicycleMainViewController: UIViewController, CLLocationManagerDelegate {
     
         // Do any additional setup after loading the view.
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0/255, green: 245/255, blue: 255/255, alpha: 1.0)
-        self.DMapView = MTMapView()
+        self.DMapView = self.appDelegate.DKMapView
         self.DMapView?.daumMapApiKey = DMApiKey
         self.DMapView?.currentLocationTrackingMode = MTMapCurrentLocationTrackingMode.onWithoutHeading
         self.view.addSubview(self.DMapView!)

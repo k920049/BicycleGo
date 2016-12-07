@@ -7,21 +7,22 @@
 //
 
 import UIKit
+import CoreLocation
 
-class BicycleMapViewController: UIViewController, CLLocationManagerDelegate {
+class BicycleMapViewController: UIViewController, CLLocationManagerDelegate, UISearchBarDelegate {
     @IBOutlet var menuItem : UIBarButtonItem!
+    @IBOutlet var searchBar : UISearchBar!
+    @IBOutlet var mapViewFrame : UIView!
 
-    var cameraPosition : GMSCameraPosition?
-    var mapView : GMSMapView?
+   
     var DKMapView : MTMapView?
-    var marker : GMSMarker?
     var currentLocation : CLLocation?
-    
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    
     var locman : CLLocationManager?
-    
     var group = DispatchGroup()
+    let searchKeyword = SearchKeyword()
+    
+    var searchActive : Bool = false
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -44,34 +45,60 @@ class BicycleMapViewController: UIViewController, CLLocationManagerDelegate {
             self.locman?.activityType = .fitness
             self.locman?.startUpdatingLocation()
         }
+        self.searchBar.delegate = self
+        self.searchBar.showsCancelButton = true
         
-        
-        GMSServices.provideAPIKey(GMApiKey)
-        self.retrieveGMSCameraPosition()
-        self.mapView = GMSMapView.map(withFrame: CGRect(x: 0, y: 0,
-                                                        width: self.view.frame.size.width, height: self.view.frame.size.height),
-                                      camera: GMSCameraPosition.camera(withLatitude: 37.5663, longitude: 126.9779, zoom: 12) )
-        
-        self.view.addSubview(self.mapView!)
-        
-        self.DKMapView = MTMapView(frame: CGRect.zero)
+        self.DKMapView = self.appDelegate.DKMapView
         self.DKMapView?.daumMapApiKey = DMApiKey
-        
-        
-        
     }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchActive = true
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        searchActive = false
+        view.endEditing(true)
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchActive = false
+        view.endEditing(true)
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchActive = false
+        view.endEditing(true)
+        let currentViewLocation = mapView?.camera.target
+        
+        self.searchKeyword.setKeyword(keyword: searchBar.text!,
+                                      latitude: (currentViewLocation?.latitude)!,
+                                      longitude: (currentViewLocation?.longitude)!,
+                                      radius: 20000)
+        let result = self.searchKeyword.search()
+        
+        if let _result = result {
+            for element in _result {
+            }
+        } else {
+            let errorAlertController = UIAlertController(title: "Error",
+                                                         message: "Nothing is returned from server",
+                                                         preferredStyle: .actionSheet)
+            let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            errorAlertController.addAction(cancelAction)
+            errorAlertController.show()
+        }
+    }
+    
     
     func retrieveGMSCameraPosition() {
         DispatchQueue.global(qos: .userInteractive).async {
             while(true) {
                 self.group.enter()
                 if self.currentLocation != nil {
-                    print("loop")
-                    self.cameraPosition = GMSCameraPosition.camera(withLatitude: (self.currentLocation?.coordinate.latitude)!, longitude: (self.currentLocation?.coordinate.longitude)!, zoom: 12)
-                    self.cameraPosition = GMSCameraPosition.camera(withTarget: (self.currentLocation?.coordinate)!, zoom: 12)
+                    
                     DispatchQueue.main.async {
-                        self.mapView?.camera = self.cameraPosition!
-                        print("done")
+                       
                     }
                     break
                 }

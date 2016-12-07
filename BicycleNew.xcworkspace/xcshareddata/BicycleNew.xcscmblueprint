@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B44CA7B361BC041D671B82898753B839DA28DD58",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B44CA7B361BC041D671B82898753B839DA28DD58" : 9223372036854775807,
+    "05336D6C894B48E8F1CCDAB41B262191F18E4E2C" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A87DF1D4-F3B6-4AC8-9D4E-B2371710EFC2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B44CA7B361BC041D671B82898753B839DA28DD58" : "BicycleNew\/",
+    "05336D6C894B48E8F1CCDAB41B262191F18E4E2C" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BicycleNew",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BicycleNew.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ENOW-IJI\/ENOW-server.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "05336D6C894B48E8F1CCDAB41B262191F18E4E2C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/k920049\/BicycleGo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B44CA7B361BC041D671B82898753B839DA28DD58"
+    }
+  ]
+}

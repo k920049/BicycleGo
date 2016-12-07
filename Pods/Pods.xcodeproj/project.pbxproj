@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00F32F560975895976E85C16078A7856 /* Gauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4E1AD5453B17891EE81772F57D8C0A /* Gauge.swift */; };
+		00F32F560975895976E85C16078A7856 /* Gauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F8C0CD9721014B9903FF42514DF26D /* Gauge.swift */; };
 		02F643561C43E9A736294532F1A338E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
-		129658B22B5400E82176E11E727DD645 /* GaugeLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA7DC0A0A1CEED95CBE2CBD190BE24 /* GaugeLine.swift */; };
-		1BF90C1B1B15F6379BB116DF5BD99BC4 /* Gauge+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D188634263F0913DE104FFD9B20B219A /* Gauge+Animations.swift */; };
+		129658B22B5400E82176E11E727DD645 /* GaugeLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1493911DB3B3C03CBBFEDFB3A7FEC422 /* GaugeLine.swift */; };
+		1BF90C1B1B15F6379BB116DF5BD99BC4 /* Gauge+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BA3B32305A2EABA7A31DC5562B06E1 /* Gauge+Animations.swift */; };
 		268FD61B881932F2EB83CE7EEA2F8FE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC32878090C4B2B93381956161EC0930 /* Foundation.framework */; };
-		45B1E58CA73ED11C40CF8464704FA3BE /* UIColor+Blend.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44D370AA2E770A88BF6B45E90690B0B /* UIColor+Blend.swift */; };
-		48B15D0B0D855B5F3DBFC0AD9EFC0478 /* CAShapeLayer+oval.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881B557C76F3FCD8908BAD13C518C57 /* CAShapeLayer+oval.swift */; };
-		6391CDCB38F2381231D7FD7610FE529B /* GaugeHalf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C05DD6AAA7D99A3E0E6A9E68546FB07 /* GaugeHalf.swift */; };
+		45B1E58CA73ED11C40CF8464704FA3BE /* UIColor+Blend.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB49ADDF00CEB8947ACD0AEC577D3F92 /* UIColor+Blend.swift */; };
+		48B15D0B0D855B5F3DBFC0AD9EFC0478 /* CAShapeLayer+oval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7059F3CA22C2DA09DE6EDC48149CB7FC /* CAShapeLayer+oval.swift */; };
+		6391CDCB38F2381231D7FD7610FE529B /* GaugeHalf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2ED9C5285C544AE867ED9F7037DC58 /* GaugeHalf.swift */; };
 		6D40B9C87BA6C51B947101ACFD8A6DA0 /* Pods-BicycleNew-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B20B73A7DEF19B1D50F457F6E9B38867 /* Pods-BicycleNew-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7CA7A4E6EDCF3C1D7E4973B8AC9170A4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0203FCF2E38F9E0B8C4E69853543A3E /* QuartzCore.framework */; };
-		919D1421C1234A54B5512ADFDD5AEE44 /* GaugeKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A131950CFBEB814877EDEA5D4856C850 /* GaugeKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9DBC9BBE007724859996675C4FF1B1D5 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = F7986475C58A1EC2AB12CEEAB1DF8235 /* Info.plist */; };
+		919D1421C1234A54B5512ADFDD5AEE44 /* GaugeKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C9A147CB3AD2402250C7D290D91B7C7 /* GaugeKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DBC9BBE007724859996675C4FF1B1D5 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 7F35F2894DB05356D35C6ED284F36201 /* Info.plist */; };
 		B0305296C93F3878D72A2D4AD92E158B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF675A168132FD52AED630F977FE906 /* UIKit.framework */; };
 		C953B349C9ACDFBA9CD12F8A359A78A7 /* Pods-BicycleNew-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D496BE2D24BE39EFE2F02DDB92052AF3 /* Pods-BicycleNew-dummy.m */; };
-		E4BE531B31B4F75633072124498B3767 /* GaugeCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD74AB55DA13201C0B192B7A7985019 /* GaugeCircle.swift */; };
-		EB2586672ECB9EE8154E40FA35B54746 /* GaugeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F2004DF37F23BD999E2BE648BF69E1 /* GaugeKit-dummy.m */; };
-		FD68B0CD84FFFF658C849CF73DC06311 /* GaugeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C994DA00FA4EBCDC333FE608AD8B81D3 /* GaugeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4BE531B31B4F75633072124498B3767 /* GaugeCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFC9BFD882A1BE5B79E1BCA7076A788 /* GaugeCircle.swift */; };
+		EB2586672ECB9EE8154E40FA35B54746 /* GaugeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D28874761147AE71750F95DEA1CEC0DE /* GaugeKit-dummy.m */; };
+		FD68B0CD84FFFF658C849CF73DC06311 /* GaugeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E51F9970C57099A58F746542B5BED0 /* GaugeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,41 +37,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02D36C79B8B1EF80FFF8F292F351F3C0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0B3E747D35C530685E407870779DE878 /* GaugeKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GaugeKit.modulemap; sourceTree = "<group>"; };
-		11CA7DC0A0A1CEED95CBE2CBD190BE24 /* GaugeLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GaugeLine.swift; path = GaugeKit/GaugeLine.swift; sourceTree = "<group>"; };
-		12F2004DF37F23BD999E2BE648BF69E1 /* GaugeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GaugeKit-dummy.m"; sourceTree = "<group>"; };
-		2C05DD6AAA7D99A3E0E6A9E68546FB07 /* GaugeHalf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GaugeHalf.swift; path = GaugeKit/GaugeHalf.swift; sourceTree = "<group>"; };
+		1493911DB3B3C03CBBFEDFB3A7FEC422 /* GaugeLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GaugeLine.swift; path = GaugeKit/GaugeLine.swift; sourceTree = "<group>"; };
+		1FFC9BFD882A1BE5B79E1BCA7076A788 /* GaugeCircle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GaugeCircle.swift; path = GaugeKit/GaugeCircle.swift; sourceTree = "<group>"; };
+		26BA3B32305A2EABA7A31DC5562B06E1 /* Gauge+Animations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Gauge+Animations.swift"; path = "GaugeKit/Gauge+Animations.swift"; sourceTree = "<group>"; };
+		2E2ED9C5285C544AE867ED9F7037DC58 /* GaugeHalf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GaugeHalf.swift; path = GaugeKit/GaugeHalf.swift; sourceTree = "<group>"; };
+		48E51F9970C57099A58F746542B5BED0 /* GaugeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GaugeKit.h; path = GaugeKit/GaugeKit.h; sourceTree = "<group>"; };
+		54A7DB31AE8F26A6764C1FD45ED8A7AF /* GaugeKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GaugeKit.modulemap; sourceTree = "<group>"; };
 		57E4B0A58F56D6D90748BF0B8DF870C2 /* Pods-BicycleNew-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BicycleNew-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5BF675A168132FD52AED630F977FE906 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		64D4E1E7F5BA105A78B65EE7FFB72CB9 /* Pods_BicycleNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BicycleNew.framework; path = "Pods-BicycleNew.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F8C0CD9721014B9903FF42514DF26D /* Gauge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gauge.swift; path = GaugeKit/Gauge.swift; sourceTree = "<group>"; };
 		6F903D5F02A957C06ED6B21166BD6F17 /* Pods-BicycleNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BicycleNew.debug.xcconfig"; sourceTree = "<group>"; };
+		7059F3CA22C2DA09DE6EDC48149CB7FC /* CAShapeLayer+oval.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAShapeLayer+oval.swift"; path = "GaugeKit/CAShapeLayer+oval.swift"; sourceTree = "<group>"; };
+		7C9A147CB3AD2402250C7D290D91B7C7 /* GaugeKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GaugeKit-umbrella.h"; sourceTree = "<group>"; };
+		7F35F2894DB05356D35C6ED284F36201 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = GaugeKit/Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		949540661D3A698068F83C8CE266E3D0 /* GaugeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GaugeKit.xcconfig; sourceTree = "<group>"; };
-		976F8CFD547824072DCE7A13AD0E43AB /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
 		9C706BF4E30E977E099C6FEEF71483C0 /* Pods-BicycleNew-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BicycleNew-acknowledgements.plist"; sourceTree = "<group>"; };
-		A131950CFBEB814877EDEA5D4856C850 /* GaugeKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GaugeKit-umbrella.h"; sourceTree = "<group>"; };
+		AB49ADDF00CEB8947ACD0AEC577D3F92 /* UIColor+Blend.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Blend.swift"; path = "GaugeKit/UIColor+Blend.swift"; sourceTree = "<group>"; };
 		B20B73A7DEF19B1D50F457F6E9B38867 /* Pods-BicycleNew-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BicycleNew-umbrella.h"; sourceTree = "<group>"; };
-		B5BC8B9C502B6629856BA81C49059E16 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		B46961A427A619DE60251B5E312B39DC /* GaugeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GaugeKit-prefix.pch"; sourceTree = "<group>"; };
 		B639A7C71E0AA95251004C37D5D43602 /* Pods-BicycleNew.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BicycleNew.modulemap"; sourceTree = "<group>"; };
-		BB4E1AD5453B17891EE81772F57D8C0A /* Gauge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gauge.swift; path = GaugeKit/Gauge.swift; sourceTree = "<group>"; };
-		C994DA00FA4EBCDC333FE608AD8B81D3 /* GaugeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GaugeKit.h; path = GaugeKit/GaugeKit.h; sourceTree = "<group>"; };
 		CB7C3CBEEE4D6CF1CF487BD30BB2B849 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D188634263F0913DE104FFD9B20B219A /* Gauge+Animations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Gauge+Animations.swift"; path = "GaugeKit/Gauge+Animations.swift"; sourceTree = "<group>"; };
 		D2757D077E11D1DFA317E5F7227D442E /* GaugeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GaugeKit.framework; path = GaugeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D28874761147AE71750F95DEA1CEC0DE /* GaugeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GaugeKit-dummy.m"; sourceTree = "<group>"; };
 		D3CE9908A503A58B3024D026A0283367 /* Pods-BicycleNew-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BicycleNew-resources.sh"; sourceTree = "<group>"; };
 		D496BE2D24BE39EFE2F02DDB92052AF3 /* Pods-BicycleNew-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BicycleNew-dummy.m"; sourceTree = "<group>"; };
 		D723A374BCE4C2036EB9CA1F732E5819 /* Pods-BicycleNew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BicycleNew.release.xcconfig"; sourceTree = "<group>"; };
-		D881B557C76F3FCD8908BAD13C518C57 /* CAShapeLayer+oval.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAShapeLayer+oval.swift"; path = "GaugeKit/CAShapeLayer+oval.swift"; sourceTree = "<group>"; };
-		D94F24B55F9491B3D9A60EE7BAC843BC /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
-		DFD74AB55DA13201C0B192B7A7985019 /* GaugeCircle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GaugeCircle.swift; path = GaugeKit/GaugeCircle.swift; sourceTree = "<group>"; };
 		E0203FCF2E38F9E0B8C4E69853543A3E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		EB71EE855AB26A2ED3BA0ACBCF2CEB74 /* GaugeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GaugeKit-prefix.pch"; sourceTree = "<group>"; };
 		EBF559D42DA0DC539F8C2D6F3FF5EE15 /* Pods-BicycleNew-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BicycleNew-frameworks.sh"; sourceTree = "<group>"; };
 		EC32878090C4B2B93381956161EC0930 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		F44D370AA2E770A88BF6B45E90690B0B /* UIColor+Blend.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Blend.swift"; path = "GaugeKit/UIColor+Blend.swift"; sourceTree = "<group>"; };
-		F7986475C58A1EC2AB12CEEAB1DF8235 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = GaugeKit/Info.plist; sourceTree = "<group>"; };
-		FC945DBC94BEA9E5471D46CC1FD5B401 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		EFDBB873A188D1866BD635C54376F4ED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F512B1C67AA34CD2B12AA1D7870E704F /* GaugeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GaugeKit.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,46 +100,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		222C833DE2C12BFFA9B189E01038D44F /* GaugeKit */ = {
-			isa = PBXGroup;
-			children = (
-				D881B557C76F3FCD8908BAD13C518C57 /* CAShapeLayer+oval.swift */,
-				BB4E1AD5453B17891EE81772F57D8C0A /* Gauge.swift */,
-				D188634263F0913DE104FFD9B20B219A /* Gauge+Animations.swift */,
-				DFD74AB55DA13201C0B192B7A7985019 /* GaugeCircle.swift */,
-				2C05DD6AAA7D99A3E0E6A9E68546FB07 /* GaugeHalf.swift */,
-				C994DA00FA4EBCDC333FE608AD8B81D3 /* GaugeKit.h */,
-				11CA7DC0A0A1CEED95CBE2CBD190BE24 /* GaugeLine.swift */,
-				F7986475C58A1EC2AB12CEEAB1DF8235 /* Info.plist */,
-				F44D370AA2E770A88BF6B45E90690B0B /* UIColor+Blend.swift */,
-				293B3E5A2835720FDAB5A05BFA1CD294 /* Support Files */,
-			);
-			name = GaugeKit;
-			path = GaugeKit;
-			sourceTree = "<group>";
-		};
-		293B3E5A2835720FDAB5A05BFA1CD294 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0B3E747D35C530685E407870779DE878 /* GaugeKit.modulemap */,
-				949540661D3A698068F83C8CE266E3D0 /* GaugeKit.xcconfig */,
-				12F2004DF37F23BD999E2BE648BF69E1 /* GaugeKit-dummy.m */,
-				EB71EE855AB26A2ED3BA0ACBCF2CEB74 /* GaugeKit-prefix.pch */,
-				A131950CFBEB814877EDEA5D4856C850 /* GaugeKit-umbrella.h */,
-				02D36C79B8B1EF80FFF8F292F351F3C0 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GaugeKit";
-			sourceTree = "<group>";
-		};
-		41C146609E274E78BBADF67F5D0D73B1 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				B5BC8B9C502B6629856BA81C49059E16 /* GoogleMaps.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		45BEE74F6543FC5F343F4884B2B90446 /* Pods-BicycleNew */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,7 +123,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				F26814BFF2BF4C4A2E8DCB03180621F0 /* Pods */,
+				B6B1323DE8589BBC241C9A6D33995F58 /* Pods */,
 				94CD7BDB098C209A0142707860428783 /* Products */,
 				7E8071C6C431FBF503A9E529260DAB3A /* Targets Support Files */,
 			);
@@ -181,6 +137,24 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		94458AC77EA0D1893B0B67B8E3A1B2C6 /* GaugeKit */ = {
+			isa = PBXGroup;
+			children = (
+				7059F3CA22C2DA09DE6EDC48149CB7FC /* CAShapeLayer+oval.swift */,
+				65F8C0CD9721014B9903FF42514DF26D /* Gauge.swift */,
+				26BA3B32305A2EABA7A31DC5562B06E1 /* Gauge+Animations.swift */,
+				1FFC9BFD882A1BE5B79E1BCA7076A788 /* GaugeCircle.swift */,
+				2E2ED9C5285C544AE867ED9F7037DC58 /* GaugeHalf.swift */,
+				48E51F9970C57099A58F746542B5BED0 /* GaugeKit.h */,
+				1493911DB3B3C03CBBFEDFB3A7FEC422 /* GaugeLine.swift */,
+				7F35F2894DB05356D35C6ED284F36201 /* Info.plist */,
+				AB49ADDF00CEB8947ACD0AEC577D3F92 /* UIColor+Blend.swift */,
+				E5141645514BE457DEF04FD34C384149 /* Support Files */,
+			);
+			name = GaugeKit;
+			path = GaugeKit;
+			sourceTree = "<group>";
+		};
 		94CD7BDB098C209A0142707860428783 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,39 +164,26 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		955B21BCCFEB2201DF590A7B42A2A526 /* Frameworks */ = {
+		B6B1323DE8589BBC241C9A6D33995F58 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FC945DBC94BEA9E5471D46CC1FD5B401 /* GoogleMapsBase.framework */,
+				94458AC77EA0D1893B0B67B8E3A1B2C6 /* GaugeKit */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		AAC893DCF01B71858B28A940004A65DE /* GoogleMaps */ = {
+		E5141645514BE457DEF04FD34C384149 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CFE4EA79B598730EB2781AC16AECF340 /* Base */,
-				B8A7F215C03D022780B0A269FDD4F645 /* Maps */,
+				54A7DB31AE8F26A6764C1FD45ED8A7AF /* GaugeKit.modulemap */,
+				F512B1C67AA34CD2B12AA1D7870E704F /* GaugeKit.xcconfig */,
+				D28874761147AE71750F95DEA1CEC0DE /* GaugeKit-dummy.m */,
+				B46961A427A619DE60251B5E312B39DC /* GaugeKit-prefix.pch */,
+				7C9A147CB3AD2402250C7D290D91B7C7 /* GaugeKit-umbrella.h */,
+				EFDBB873A188D1866BD635C54376F4ED /* Info.plist */,
 			);
-			name = GoogleMaps;
-			path = GoogleMaps;
-			sourceTree = "<group>";
-		};
-		B8A7F215C03D022780B0A269FDD4F645 /* Maps */ = {
-			isa = PBXGroup;
-			children = (
-				F7C605AEBA858C39677461EFD3C46A15 /* Frameworks */,
-				41C146609E274E78BBADF67F5D0D73B1 /* Resources */,
-			);
-			name = Maps;
-			sourceTree = "<group>";
-		};
-		CFE4EA79B598730EB2781AC16AECF340 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				955B21BCCFEB2201DF590A7B42A2A526 /* Frameworks */,
-			);
-			name = Base;
+			name = "Support Files";
+			path = "../Target Support Files/GaugeKit";
 			sourceTree = "<group>";
 		};
 		E5E9260013FA223D81B907D9285F6EA1 /* iOS */ = {
@@ -233,24 +194,6 @@
 				5BF675A168132FD52AED630F977FE906 /* UIKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		F26814BFF2BF4C4A2E8DCB03180621F0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				222C833DE2C12BFFA9B189E01038D44F /* GaugeKit */,
-				AAC893DCF01B71858B28A940004A65DE /* GoogleMaps */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		F7C605AEBA858C39677461EFD3C46A15 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D94F24B55F9491B3D9A60EE7BAC843BC /* GoogleMaps.framework */,
-				976F8CFD547824072DCE7A13AD0E43AB /* GoogleMapsCore.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -532,7 +475,7 @@
 		};
 		CCFB627BCFF111D9992E920A5A7CE54F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 949540661D3A698068F83C8CE266E3D0 /* GaugeKit.xcconfig */;
+			baseConfigurationReference = F512B1C67AA34CD2B12AA1D7870E704F /* GaugeKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -564,7 +507,7 @@
 		};
 		F480D4B2985F9ECD3CBAD7EBA65851FC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 949540661D3A698068F83C8CE266E3D0 /* GaugeKit.xcconfig */;
+			baseConfigurationReference = F512B1C67AA34CD2B12AA1D7870E704F /* GaugeKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

@@ -552,19 +552,40 @@
                     <view key="view" contentMode="scaleToFill" id="86T-NP-6rw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="n4t-SR-Dda">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PHK-ia-lkP">
+                                <rect key="frame" x="0.0" y="108" width="375" height="510"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PHK-ia-lkP" firstAttribute="top" secondItem="n4t-SR-Dda" secondAttribute="bottom" id="Eai-A9-vcV"/>
+                            <constraint firstItem="PHK-ia-lkP" firstAttribute="trailing" secondItem="n4t-SR-Dda" secondAttribute="trailing" id="Rtt-Cs-p6k"/>
+                            <constraint firstItem="PHK-ia-lkP" firstAttribute="leading" secondItem="n4t-SR-Dda" secondAttribute="leading" id="c2e-hB-hYz"/>
+                            <constraint firstItem="n4t-SR-Dda" firstAttribute="top" secondItem="1hH-MZ-NcI" secondAttribute="bottom" id="gZs-Nc-VjZ"/>
+                            <constraint firstAttribute="trailing" secondItem="n4t-SR-Dda" secondAttribute="trailing" id="qJ8-5R-ykJ"/>
+                            <constraint firstItem="PHK-ia-lkP" firstAttribute="bottom" secondItem="t1R-B4-FeD" secondAttribute="top" id="rlB-o0-jz1"/>
+                            <constraint firstItem="n4t-SR-Dda" firstAttribute="leading" secondItem="86T-NP-6rw" secondAttribute="leading" id="trb-oX-S0y"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uPj-sj-B1u">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="2L6-7i-J2v"/>
                         <barButtonItem key="rightBarButtonItem" image="navigation-arrow" id="fR2-8B-VTk"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="mapViewFrame" destination="PHK-ia-lkP" id="aaN-5L-t1p"/>
                         <outlet property="menuItem" destination="2L6-7i-J2v" id="QVQ-fX-ZUD"/>
+                        <outlet property="searchBar" destination="n4t-SR-Dda" id="FdC-0k-HX6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQW-Mx-evV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1974" y="-337"/>
+            <point key="canvasLocation" x="1973.5999999999999" y="-337.78110944527737"/>
         </scene>
         <!--Bicycle Menu Table View Controller-->
         <scene sceneID="PWk-WV-27c">

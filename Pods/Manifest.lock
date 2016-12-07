@@ -1,19 +1,12 @@
 PODS:
   - GaugeKit (0.4.0)
-  - GoogleMaps (2.1.1):
-    - GoogleMaps/Maps (= 2.1.1)
-  - GoogleMaps/Base (2.1.1)
-  - GoogleMaps/Maps (2.1.1):
-    - GoogleMaps/Base
 
 DEPENDENCIES:
   - GaugeKit
-  - GoogleMaps
 
 SPEC CHECKSUMS:
   GaugeKit: 422d082cfd8abf68d6df0b4ec625b4d19d39c89e
-  GoogleMaps: a5b5bbe47734e2443bde781a6aa64e69fdb6d785
 
-PODFILE CHECKSUM: e345ae87cb6dfdb9a460ce8f744b98a85b999951
+PODFILE CHECKSUM: b49e36ad7d981a6e16d0eca070a3104d196df07c
 
 COCOAPODS: 1.1.1

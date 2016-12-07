@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		148CAFB701D5788ECDB37D83 /* Pods_BicycleNew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A05B91020C1BDE2B1A6CC94 /* Pods_BicycleNew.framework */; };
+		180C186A51BDA554FA1951BD /* Pods_BicycleNew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33ACA3B7834DE76CCC1F7047 /* Pods_BicycleNew.framework */; };
 		280372041DF027DE00FDCC47 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280372031DF027DE00FDCC47 /* Item.swift */; };
 		280372061DF0280300FDCC47 /* ItemAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280372051DF0280300FDCC47 /* ItemAddress.swift */; };
 		280372081DF0282600FDCC47 /* SearchKMA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280372071DF0282600FDCC47 /* SearchKMA.swift */; };
 		2803720A1DF028C200FDCC47 /* ItemRSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280372091DF028C200FDCC47 /* ItemRSS.swift */; };
 		2803720C1DF029C700FDCC47 /* SearchAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2803720B1DF029C700FDCC47 /* SearchAddress.swift */; };
 		2803720E1DF02A1700FDCC47 /* BicycleAlertViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2803720D1DF02A1700FDCC47 /* BicycleAlertViewControllerExtension.swift */; };
+		2811F4721DF7E5A6004D118A /* HeadingAngleSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F4651DF7E5A6004D118A /* HeadingAngleSmall.png */; };
+		2811F4731DF7E5A6004D118A /* HeadingAngleSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F4661DF7E5A6004D118A /* HeadingAngleSmall@2x.png */; };
+		2811F4741DF7E5A6004D118A /* icon_clustering.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F4671DF7E5A6004D118A /* icon_clustering.png */; };
+		2811F4751DF7E5A6004D118A /* icon_clustering@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F4681DF7E5A6004D118A /* icon_clustering@2x.png */; };
+		2811F4761DF7E5A6004D118A /* mapbg_tlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F4691DF7E5A6004D118A /* mapbg_tlogo.png */; };
+		2811F4771DF7E5A6004D118A /* mapbg_tlogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F46A1DF7E5A6004D118A /* mapbg_tlogo@2x.png */; };
+		2811F4781DF7E5A6004D118A /* poweredby.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F46B1DF7E5A6004D118A /* poweredby.png */; };
+		2811F4791DF7E5A6004D118A /* poweredby@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F46C1DF7E5A6004D118A /* poweredby@2x.png */; };
+		2811F47A1DF7E5A6004D118A /* TrackingDot.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F46D1DF7E5A6004D118A /* TrackingDot.png */; };
+		2811F47B1DF7E5A6004D118A /* TrackingDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F46E1DF7E5A6004D118A /* TrackingDot@2x.png */; };
+		2811F47C1DF7E5A6004D118A /* TrackingDotHalo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F46F1DF7E5A6004D118A /* TrackingDotHalo.png */; };
+		2811F47D1DF7E5A6004D118A /* TrackingDotHalo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F4701DF7E5A6004D118A /* TrackingDotHalo@2x.png */; };
+		2811F47E1DF7E5A6004D118A /* TopLib_Op.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2811F4711DF7E5A6004D118A /* TopLib_Op.a */; };
 		2851D2321DF03E7F00A1FC5D /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851D2301DF03E7F00A1FC5D /* DaumMap.framework */; };
 		2851D2331DF03E7F00A1FC5D /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851D2311DF03E7F00A1FC5D /* KakaoOpenSDK.framework */; };
 		2851D2351DF03ED100A1FC5D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851D2341DF03ED100A1FC5D /* OpenGLES.framework */; };
@@ -36,6 +49,7 @@
 		287B24A71DEEDFF100D654AA /* BicycleMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287B24A61DEEDFF100D654AA /* BicycleMainViewController.swift */; };
 		287B24AB1DEEE4A200D654AA /* BicycleRevealMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287B24AA1DEEE4A200D654AA /* BicycleRevealMenuTableViewController.swift */; };
 		287B24AD1DEEE67D00D654AA /* BicycleTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287B24AC1DEEE67D00D654AA /* BicycleTabBarController.swift */; };
+		287BD4A01DF6AFB000257F48 /* SearchKeyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287BD49F1DF6AFB000257F48 /* SearchKeyword.swift */; };
 		28C1A3B71DF2B187003B1068 /* BicycleMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1A3B61DF2B187003B1068 /* BicycleMenuTableViewController.swift */; };
 		28D2F8471DF186E200F59A7B /* BicycleManagerHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D2F8461DF186E200F59A7B /* BicycleManagerHolder.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +61,38 @@
 		280372091DF028C200FDCC47 /* ItemRSS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemRSS.swift; sourceTree = "<group>"; };
 		2803720B1DF029C700FDCC47 /* SearchAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAddress.swift; sourceTree = "<group>"; };
 		2803720D1DF02A1700FDCC47 /* BicycleAlertViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleAlertViewControllerExtension.swift; sourceTree = "<group>"; };
+		2811F4511DF7E5A6004D118A /* BizCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BizCategory.h; sourceTree = "<group>"; };
+		2811F4521DF7E5A6004D118A /* TMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMap.h; sourceTree = "<group>"; };
+		2811F4531DF7E5A6004D118A /* TMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapAnnotation.h; sourceTree = "<group>"; };
+		2811F4541DF7E5A6004D118A /* TMapBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapBaseView.h; sourceTree = "<group>"; };
+		2811F4551DF7E5A6004D118A /* TMapCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapCircle.h; sourceTree = "<group>"; };
+		2811F4561DF7E5A6004D118A /* TMapGpsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapGpsManager.h; sourceTree = "<group>"; };
+		2811F4571DF7E5A6004D118A /* TMapKatec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapKatec.h; sourceTree = "<group>"; };
+		2811F4581DF7E5A6004D118A /* TMapMarkerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapMarkerItem.h; sourceTree = "<group>"; };
+		2811F4591DF7E5A6004D118A /* TMapMarkerItem2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapMarkerItem2.h; sourceTree = "<group>"; };
+		2811F45A1DF7E5A6004D118A /* TMapObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapObject.h; sourceTree = "<group>"; };
+		2811F45B1DF7E5A6004D118A /* TMapOverlayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapOverlayItem.h; sourceTree = "<group>"; };
+		2811F45C1DF7E5A6004D118A /* TMapPathData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapPathData.h; sourceTree = "<group>"; };
+		2811F45D1DF7E5A6004D118A /* TMapPOIItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapPOIItem.h; sourceTree = "<group>"; };
+		2811F45E1DF7E5A6004D118A /* TMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapPoint.h; sourceTree = "<group>"; };
+		2811F45F1DF7E5A6004D118A /* TMapPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapPolygon.h; sourceTree = "<group>"; };
+		2811F4601DF7E5A6004D118A /* TMapPolyLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapPolyLine.h; sourceTree = "<group>"; };
+		2811F4611DF7E5A6004D118A /* TMapTapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapTapi.h; sourceTree = "<group>"; };
+		2811F4621DF7E5A6004D118A /* TMapType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapType.h; sourceTree = "<group>"; };
+		2811F4631DF7E5A6004D118A /* TMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapView.h; sourceTree = "<group>"; };
+		2811F4651DF7E5A6004D118A /* HeadingAngleSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeadingAngleSmall.png; sourceTree = "<group>"; };
+		2811F4661DF7E5A6004D118A /* HeadingAngleSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HeadingAngleSmall@2x.png"; sourceTree = "<group>"; };
+		2811F4671DF7E5A6004D118A /* icon_clustering.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_clustering.png; sourceTree = "<group>"; };
+		2811F4681DF7E5A6004D118A /* icon_clustering@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_clustering@2x.png"; sourceTree = "<group>"; };
+		2811F4691DF7E5A6004D118A /* mapbg_tlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapbg_tlogo.png; sourceTree = "<group>"; };
+		2811F46A1DF7E5A6004D118A /* mapbg_tlogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapbg_tlogo@2x.png"; sourceTree = "<group>"; };
+		2811F46B1DF7E5A6004D118A /* poweredby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poweredby.png; sourceTree = "<group>"; };
+		2811F46C1DF7E5A6004D118A /* poweredby@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poweredby@2x.png"; sourceTree = "<group>"; };
+		2811F46D1DF7E5A6004D118A /* TrackingDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrackingDot.png; sourceTree = "<group>"; };
+		2811F46E1DF7E5A6004D118A /* TrackingDot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TrackingDot@2x.png"; sourceTree = "<group>"; };
+		2811F46F1DF7E5A6004D118A /* TrackingDotHalo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrackingDotHalo.png; sourceTree = "<group>"; };
+		2811F4701DF7E5A6004D118A /* TrackingDotHalo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TrackingDotHalo@2x.png"; sourceTree = "<group>"; };
+		2811F4711DF7E5A6004D118A /* TopLib_Op.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = TopLib_Op.a; sourceTree = "<group>"; };
 		2851D2301DF03E7F00A1FC5D /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DaumMap.framework; sourceTree = "<group>"; };
 		2851D2311DF03E7F00A1FC5D /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		2851D2341DF03ED100A1FC5D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -73,11 +119,12 @@
 		287B24A61DEEDFF100D654AA /* BicycleMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleMainViewController.swift; sourceTree = "<group>"; };
 		287B24AA1DEEE4A200D654AA /* BicycleRevealMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleRevealMenuTableViewController.swift; sourceTree = "<group>"; };
 		287B24AC1DEEE67D00D654AA /* BicycleTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleTabBarController.swift; sourceTree = "<group>"; };
+		287BD49F1DF6AFB000257F48 /* SearchKeyword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchKeyword.swift; sourceTree = "<group>"; };
 		28C1A3B61DF2B187003B1068 /* BicycleMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleMenuTableViewController.swift; sourceTree = "<group>"; };
 		28D2F8461DF186E200F59A7B /* BicycleManagerHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleManagerHolder.swift; sourceTree = "<group>"; };
-		5E0E6E9B77E702F6FE27E234 /* Pods-BicycleNew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BicycleNew.release.xcconfig"; path = "Pods/Target Support Files/Pods-BicycleNew/Pods-BicycleNew.release.xcconfig"; sourceTree = "<group>"; };
-		62D31EAACBCDB2D3574A755F /* Pods-BicycleNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BicycleNew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BicycleNew/Pods-BicycleNew.debug.xcconfig"; sourceTree = "<group>"; };
-		7A05B91020C1BDE2B1A6CC94 /* Pods_BicycleNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BicycleNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33ACA3B7834DE76CCC1F7047 /* Pods_BicycleNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BicycleNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2DE454C18F4BA0206AF6B67 /* Pods-BicycleNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BicycleNew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BicycleNew/Pods-BicycleNew.debug.xcconfig"; sourceTree = "<group>"; };
+		F621ABC1190596D6BABF8297 /* Pods-BicycleNew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BicycleNew.release.xcconfig"; path = "Pods/Target Support Files/Pods-BicycleNew/Pods-BicycleNew.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +134,7 @@
 			files = (
 				2851D2431DF03F0E00A1FC5D /* MapKit.framework in Frameworks */,
 				2851D2411DF03F0800A1FC5D /* libsqlite3.tbd in Frameworks */,
+				2811F47E1DF7E5A6004D118A /* TopLib_Op.a in Frameworks */,
 				2851D23F1DF03EFF00A1FC5D /* libxml2.tbd in Frameworks */,
 				2851D23D1DF03EFA00A1FC5D /* libstdc++.6.tbd in Frameworks */,
 				2851D23B1DF03EED00A1FC5D /* QuartzCore.framework in Frameworks */,
@@ -95,22 +143,13 @@
 				2851D2351DF03ED100A1FC5D /* OpenGLES.framework in Frameworks */,
 				2851D2321DF03E7F00A1FC5D /* DaumMap.framework in Frameworks */,
 				2851D2331DF03E7F00A1FC5D /* KakaoOpenSDK.framework in Frameworks */,
-				148CAFB701D5788ECDB37D83 /* Pods_BicycleNew.framework in Frameworks */,
+				180C186A51BDA554FA1951BD /* Pods_BicycleNew.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C4DA57453A27F84C40C2EDA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				62D31EAACBCDB2D3574A755F /* Pods-BicycleNew.debug.xcconfig */,
-				5E0E6E9B77E702F6FE27E234 /* Pods-BicycleNew.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		280372021DF027A500FDCC47 /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +158,7 @@
 				280372091DF028C200FDCC47 /* ItemRSS.swift */,
 				2803720B1DF029C700FDCC47 /* SearchAddress.swift */,
 				280372071DF0282600FDCC47 /* SearchKMA.swift */,
+				287BD49F1DF6AFB000257F48 /* SearchKeyword.swift */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -145,9 +185,65 @@
 				2851D2341DF03ED100A1FC5D /* OpenGLES.framework */,
 				2851D2301DF03E7F00A1FC5D /* DaumMap.framework */,
 				2851D2311DF03E7F00A1FC5D /* KakaoOpenSDK.framework */,
-				7A05B91020C1BDE2B1A6CC94 /* Pods_BicycleNew.framework */,
+				33ACA3B7834DE76CCC1F7047 /* Pods_BicycleNew.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2811F44F1DF7E5A6004D118A /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				2811F4501DF7E5A6004D118A /* Headers */,
+				2811F4641DF7E5A6004D118A /* Images */,
+				2811F4711DF7E5A6004D118A /* TopLib_Op.a */,
+			);
+			name = lib;
+			path = "../../../Downloads/[iOS]TmapSDK_배포압축용_1.0.30/lib";
+			sourceTree = "<group>";
+		};
+		2811F4501DF7E5A6004D118A /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				2811F4511DF7E5A6004D118A /* BizCategory.h */,
+				2811F4521DF7E5A6004D118A /* TMap.h */,
+				2811F4531DF7E5A6004D118A /* TMapAnnotation.h */,
+				2811F4541DF7E5A6004D118A /* TMapBaseView.h */,
+				2811F4551DF7E5A6004D118A /* TMapCircle.h */,
+				2811F4561DF7E5A6004D118A /* TMapGpsManager.h */,
+				2811F4571DF7E5A6004D118A /* TMapKatec.h */,
+				2811F4581DF7E5A6004D118A /* TMapMarkerItem.h */,
+				2811F4591DF7E5A6004D118A /* TMapMarkerItem2.h */,
+				2811F45A1DF7E5A6004D118A /* TMapObject.h */,
+				2811F45B1DF7E5A6004D118A /* TMapOverlayItem.h */,
+				2811F45C1DF7E5A6004D118A /* TMapPathData.h */,
+				2811F45D1DF7E5A6004D118A /* TMapPOIItem.h */,
+				2811F45E1DF7E5A6004D118A /* TMapPoint.h */,
+				2811F45F1DF7E5A6004D118A /* TMapPolygon.h */,
+				2811F4601DF7E5A6004D118A /* TMapPolyLine.h */,
+				2811F4611DF7E5A6004D118A /* TMapTapi.h */,
+				2811F4621DF7E5A6004D118A /* TMapType.h */,
+				2811F4631DF7E5A6004D118A /* TMapView.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		2811F4641DF7E5A6004D118A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2811F4651DF7E5A6004D118A /* HeadingAngleSmall.png */,
+				2811F4661DF7E5A6004D118A /* HeadingAngleSmall@2x.png */,
+				2811F4671DF7E5A6004D118A /* icon_clustering.png */,
+				2811F4681DF7E5A6004D118A /* icon_clustering@2x.png */,
+				2811F4691DF7E5A6004D118A /* mapbg_tlogo.png */,
+				2811F46A1DF7E5A6004D118A /* mapbg_tlogo@2x.png */,
+				2811F46B1DF7E5A6004D118A /* poweredby.png */,
+				2811F46C1DF7E5A6004D118A /* poweredby@2x.png */,
+				2811F46D1DF7E5A6004D118A /* TrackingDot.png */,
+				2811F46E1DF7E5A6004D118A /* TrackingDot@2x.png */,
+				2811F46F1DF7E5A6004D118A /* TrackingDotHalo.png */,
+				2811F4701DF7E5A6004D118A /* TrackingDotHalo@2x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		286C8CC51DF5235900D1717B /* Miscellaneous */ = {
@@ -165,8 +261,9 @@
 			children = (
 				287B24861DEED72600D654AA /* BicycleNew */,
 				287B24851DEED72600D654AA /* Products */,
+				2811F44F1DF7E5A6004D118A /* lib */,
 				280372101DF0325500FDCC47 /* Frameworks */,
-				1C4DA57453A27F84C40C2EDA /* Pods */,
+				2DF487A8983E0CAAC65D22E1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -225,6 +322,15 @@
 			name = Interface;
 			sourceTree = "<group>";
 		};
+		2DF487A8983E0CAAC65D22E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2DE454C18F4BA0206AF6B67 /* Pods-BicycleNew.debug.xcconfig */,
+				F621ABC1190596D6BABF8297 /* Pods-BicycleNew.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,12 +338,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 287B24961DEED72600D654AA /* Build configuration list for PBXNativeTarget "BicycleNew" */;
 			buildPhases = (
-				A61465C4B48FB7E8E9692C55 /* [CP] Check Pods Manifest.lock */,
+				38986612642154C4DEE19AF9 /* [CP] Check Pods Manifest.lock */,
 				287B24801DEED72600D654AA /* Sources */,
 				287B24811DEED72600D654AA /* Frameworks */,
 				287B24821DEED72600D654AA /* Resources */,
-				93389CED8DE044569EF8463C /* [CP] Embed Pods Frameworks */,
-				7E49A60E66C489EDFFDA6184 /* [CP] Copy Pods Resources */,
+				D3006CACA810FDB22E6E9832 /* [CP] Embed Pods Frameworks */,
+				AD279759BBC5A264C111C052 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -289,16 +395,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2811F47C1DF7E5A6004D118A /* TrackingDotHalo.png in Resources */,
+				2811F47A1DF7E5A6004D118A /* TrackingDot.png in Resources */,
+				2811F4771DF7E5A6004D118A /* mapbg_tlogo@2x.png in Resources */,
+				2811F4741DF7E5A6004D118A /* icon_clustering.png in Resources */,
+				2811F47B1DF7E5A6004D118A /* TrackingDot@2x.png in Resources */,
+				2811F4721DF7E5A6004D118A /* HeadingAngleSmall.png in Resources */,
 				287B24921DEED72600D654AA /* LaunchScreen.storyboard in Resources */,
 				287B248F1DEED72600D654AA /* Assets.xcassets in Resources */,
+				2811F4781DF7E5A6004D118A /* poweredby.png in Resources */,
 				287B248D1DEED72600D654AA /* Main.storyboard in Resources */,
+				2811F4761DF7E5A6004D118A /* mapbg_tlogo.png in Resources */,
+				2811F4731DF7E5A6004D118A /* HeadingAngleSmall@2x.png in Resources */,
+				2811F4791DF7E5A6004D118A /* poweredby@2x.png in Resources */,
+				2811F47D1DF7E5A6004D118A /* TrackingDotHalo@2x.png in Resources */,
+				2811F4751DF7E5A6004D118A /* icon_clustering@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7E49A60E66C489EDFFDA6184 /* [CP] Copy Pods Resources */ = {
+		38986612642154C4DEE19AF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD279759BBC5A264C111C052 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -313,7 +446,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BicycleNew/Pods-BicycleNew-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		93389CED8DE044569EF8463C /* [CP] Embed Pods Frameworks */ = {
+		D3006CACA810FDB22E6E9832 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -326,21 +459,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BicycleNew/Pods-BicycleNew-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A61465C4B48FB7E8E9692C55 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -359,6 +477,7 @@
 				28C1A3B71DF2B187003B1068 /* BicycleMenuTableViewController.swift in Sources */,
 				2803720C1DF029C700FDCC47 /* SearchAddress.swift in Sources */,
 				2803720E1DF02A1700FDCC47 /* BicycleAlertViewControllerExtension.swift in Sources */,
+				287BD4A01DF6AFB000257F48 /* SearchKeyword.swift in Sources */,
 				2803720A1DF028C200FDCC47 /* ItemRSS.swift in Sources */,
 				280372041DF027DE00FDCC47 /* Item.swift in Sources */,
 				287B24AD1DEEE67D00D654AA /* BicycleTabBarController.swift in Sources */,
@@ -410,6 +529,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -459,6 +579,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -485,8 +606,9 @@
 		};
 		287B24971DEED72600D654AA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62D31EAACBCDB2D3574A755F /* Pods-BicycleNew.debug.xcconfig */;
+			baseConfigurationReference = E2DE454C18F4BA0206AF6B67 /* Pods-BicycleNew.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -499,6 +621,7 @@
 				);
 				INFOPLIST_FILE = BicycleNew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = IJI.BicycleNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -510,8 +633,9 @@
 		};
 		287B24981DEED72600D654AA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E0E6E9B77E702F6FE27E234 /* Pods-BicycleNew.release.xcconfig */;
+			baseConfigurationReference = F621ABC1190596D6BABF8297 /* Pods-BicycleNew.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -524,6 +648,7 @@
 				);
 				INFOPLIST_FILE = BicycleNew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = IJI.BicycleNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
