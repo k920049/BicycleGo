@@ -14,8 +14,8 @@ class ManagerHolder {
     var locman : CLLocationManager?
     var doThisWhenAuthorized : (() -> ())?
     
-    init() {
-        self.locman = appDelegate.locman
+    init(locationManager : CLLocationManager) {
+        self.locman = locationManager
     }
     
     func checkForLocationAccess(always : Bool = false, andThen f:(() -> ())? = nil) {

@@ -9,4 +9,4 @@
 import Foundation
 
 let DMApiKey : String = "46aba350a4b9bbf120b7198823905be3"
-let GMApiKey : String = "AIzaSyBI0q6OlNJyf9ehxpvXhgDkb24kn29lfSQ"
+let SKApiKey : String = "98a00560-475c-317b-9758-e21fae921a49"

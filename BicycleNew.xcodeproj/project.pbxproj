@@ -27,6 +27,7 @@
 		2811F47C1DF7E5A6004D118A /* TrackingDotHalo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F46F1DF7E5A6004D118A /* TrackingDotHalo.png */; };
 		2811F47D1DF7E5A6004D118A /* TrackingDotHalo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F4701DF7E5A6004D118A /* TrackingDotHalo@2x.png */; };
 		2811F47E1DF7E5A6004D118A /* TopLib_Op.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2811F4711DF7E5A6004D118A /* TopLib_Op.a */; };
+		2811F4801DF7F97D004D118A /* BicycleStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2811F47F1DF7F97D004D118A /* BicycleStringExtension.swift */; };
 		2851D2321DF03E7F00A1FC5D /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851D2301DF03E7F00A1FC5D /* DaumMap.framework */; };
 		2851D2331DF03E7F00A1FC5D /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851D2311DF03E7F00A1FC5D /* KakaoOpenSDK.framework */; };
 		2851D2351DF03ED100A1FC5D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851D2341DF03ED100A1FC5D /* OpenGLES.framework */; };
@@ -50,6 +51,8 @@
 		287B24AB1DEEE4A200D654AA /* BicycleRevealMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287B24AA1DEEE4A200D654AA /* BicycleRevealMenuTableViewController.swift */; };
 		287B24AD1DEEE67D00D654AA /* BicycleTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287B24AC1DEEE67D00D654AA /* BicycleTabBarController.swift */; };
 		287BD4A01DF6AFB000257F48 /* SearchKeyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287BD49F1DF6AFB000257F48 /* SearchKeyword.swift */; };
+		28881D761DFBDD32001C0CDE /* BicycleAVCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28881D751DFBDD32001C0CDE /* BicycleAVCameraViewController.swift */; };
+		28881D781DFBDD41001C0CDE /* BicycleCertificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28881D771DFBDD41001C0CDE /* BicycleCertificationViewController.swift */; };
 		28C1A3B71DF2B187003B1068 /* BicycleMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1A3B61DF2B187003B1068 /* BicycleMenuTableViewController.swift */; };
 		28D2F8471DF186E200F59A7B /* BicycleManagerHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D2F8461DF186E200F59A7B /* BicycleManagerHolder.swift */; };
 /* End PBXBuildFile section */
@@ -93,6 +96,7 @@
 		2811F46F1DF7E5A6004D118A /* TrackingDotHalo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrackingDotHalo.png; sourceTree = "<group>"; };
 		2811F4701DF7E5A6004D118A /* TrackingDotHalo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TrackingDotHalo@2x.png"; sourceTree = "<group>"; };
 		2811F4711DF7E5A6004D118A /* TopLib_Op.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = TopLib_Op.a; sourceTree = "<group>"; };
+		2811F47F1DF7F97D004D118A /* BicycleStringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleStringExtension.swift; sourceTree = "<group>"; };
 		2851D2301DF03E7F00A1FC5D /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DaumMap.framework; sourceTree = "<group>"; };
 		2851D2311DF03E7F00A1FC5D /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		2851D2341DF03ED100A1FC5D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -120,6 +124,8 @@
 		287B24AA1DEEE4A200D654AA /* BicycleRevealMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleRevealMenuTableViewController.swift; sourceTree = "<group>"; };
 		287B24AC1DEEE67D00D654AA /* BicycleTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleTabBarController.swift; sourceTree = "<group>"; };
 		287BD49F1DF6AFB000257F48 /* SearchKeyword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchKeyword.swift; sourceTree = "<group>"; };
+		28881D751DFBDD32001C0CDE /* BicycleAVCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleAVCameraViewController.swift; sourceTree = "<group>"; };
+		28881D771DFBDD41001C0CDE /* BicycleCertificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleCertificationViewController.swift; sourceTree = "<group>"; };
 		28C1A3B61DF2B187003B1068 /* BicycleMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleMenuTableViewController.swift; sourceTree = "<group>"; };
 		28D2F8461DF186E200F59A7B /* BicycleManagerHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleManagerHolder.swift; sourceTree = "<group>"; };
 		33ACA3B7834DE76CCC1F7047 /* Pods_BicycleNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BicycleNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +174,7 @@
 			children = (
 				287B24A41DEEDE9500D654AA /* BicycleNavigationControllerExtension.swift */,
 				2803720D1DF02A1700FDCC47 /* BicycleAlertViewControllerExtension.swift */,
+				2811F47F1DF7F97D004D118A /* BicycleStringExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -308,6 +315,8 @@
 			children = (
 				287B24A61DEEDFF100D654AA /* BicycleMainViewController.swift */,
 				286C8CC61DF523E900D1717B /* BicycleMapViewController.swift */,
+				28881D751DFBDD32001C0CDE /* BicycleAVCameraViewController.swift */,
+				28881D771DFBDD41001C0CDE /* BicycleCertificationViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -470,15 +479,18 @@
 			files = (
 				287B248A1DEED72600D654AA /* ViewController.swift in Sources */,
 				280372081DF0282600FDCC47 /* SearchKMA.swift in Sources */,
+				28881D781DFBDD41001C0CDE /* BicycleCertificationViewController.swift in Sources */,
 				280372061DF0280300FDCC47 /* ItemAddress.swift in Sources */,
 				287B24A51DEEDE9500D654AA /* BicycleNavigationControllerExtension.swift in Sources */,
 				287B24881DEED72600D654AA /* AppDelegate.swift in Sources */,
 				287B24AB1DEEE4A200D654AA /* BicycleRevealMenuTableViewController.swift in Sources */,
 				28C1A3B71DF2B187003B1068 /* BicycleMenuTableViewController.swift in Sources */,
 				2803720C1DF029C700FDCC47 /* SearchAddress.swift in Sources */,
+				2811F4801DF7F97D004D118A /* BicycleStringExtension.swift in Sources */,
 				2803720E1DF02A1700FDCC47 /* BicycleAlertViewControllerExtension.swift in Sources */,
 				287BD4A01DF6AFB000257F48 /* SearchKeyword.swift in Sources */,
 				2803720A1DF028C200FDCC47 /* ItemRSS.swift in Sources */,
+				28881D761DFBDD32001C0CDE /* BicycleAVCameraViewController.swift in Sources */,
 				280372041DF027DE00FDCC47 /* Item.swift in Sources */,
 				287B24AD1DEEE67D00D654AA /* BicycleTabBarController.swift in Sources */,
 				28D2F8471DF186E200F59A7B /* BicycleManagerHolder.swift in Sources */,
@@ -622,7 +634,11 @@
 				INFOPLIST_FILE = BicycleNew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
-				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = IJI.BicycleNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BicycleNew/BicycleNew-Bridging-Header.h";
@@ -649,7 +665,11 @@
 				INFOPLIST_FILE = BicycleNew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
-				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = IJI.BicycleNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BicycleNew/BicycleNew-Bridging-Header.h";

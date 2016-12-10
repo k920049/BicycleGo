@@ -9,10 +9,9 @@
 import UIKit
 import GaugeKit
 import CoreLocation
+import Darwin
 
-let manageHoler = ManagerHolder()
-
-class BicycleMainViewController: UIViewController, CLLocationManagerDelegate {
+class BicycleMainViewController: UIViewController {
     @IBOutlet var menuItem : UIBarButtonItem!
     @IBOutlet var buttonPlay : UIButton!
     @IBOutlet var speedometerView : UIView!
@@ -38,9 +37,13 @@ class BicycleMainViewController: UIViewController, CLLocationManagerDelegate {
     var provinceCode : String = ""
     var town : String = ""
     var townCode : String = ""
-    
-    var DMapView : MTMapView?
+
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    var DMapView : MTMapView?
+    var manageHolder : ManagerHolder?
+    var locman : CLLocationManager? {
+        return self.manageHolder?.locman
+    }
     var timer = Timer()
    
     var startLocation:CLLocation!
@@ -49,96 +52,101 @@ class BicycleMainViewController: UIViewController, CLLocationManagerDelegate {
     var loc: CLLocation!
     var counter = 0
     var traveledDistance:Double = 0
+    var shouldEndExecute : Bool = false
+    var isInitial : Bool = true
+    var isStarted : Bool = false
     
     var weatherImages = ["Sunny", "PartlyCloudy", "Rain", "RainANDSnow"]
     var directionImages = ["North", "NorthEast", "East", "SouthEast", "South", "SouthWest", "West", "NorthWest"]
     
     @IBAction func buttonClicked(sender : UIButton) {
-        
+        // Executed when the play button is clicked
         if(sender == buttonPlay) {
             buttonPlay.isHidden = true
             speedometerView.isHidden = false
             startButton.isHidden = false
             endButton.isHidden = false
         } else if(sender == endButton) {
+            self.isStarted = false
+            self.appDelegate.flagAccumulate = false
+            self.shouldEndExecute = true
+            
             buttonPlay.isHidden = false
             speedometerView.isHidden = true
             startButton.isHidden = true
             endButton.isHidden = true
             timer.invalidate()
+            
             secondsToHoursMinutesSeconds(counter, result: { (h, m, s) in
                 self.timeAccumulated.text = "\(self.timeText(h)):\(self.timeText(m)):\(self.timeText(s))"
             })
+            // Stores accumulated counter to UserDefaults
+            UserDefaults.standard.set(self.counter, forKey: "Accumulated counter")
         } else if(sender == startButton) {
-            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(BicycleMainViewController.updateCounter), userInfo: nil, repeats: true)
-        }
-    }
-    
-    
-    let REQ_ACC : CLLocationAccuracy = 100
-    var shouldExecute : Bool = false
-    
-    var locman : CLLocationManager {
-        return manageHoler.locman!
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        self.locman.delegate = self
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        switch status {
-        case .authorizedWhenInUse, .authorizedAlways:
-            DispatchQueue.global(qos: .background).async {
-                manageHoler.doThisWhenAuthorized?()
-            }
-        default:
-            break
-        }
-    }
-
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-
-        if startLocation == nil {
-            startLocation = locations.first
-            lastLocation = locations.last
-        } else {
-            prevlastLocation = lastLocation
-            lastLocation = locations.last
-            let lastDistance = prevlastLocation.distance(from: lastLocation)
-            traveledDistance += lastDistance
-            distanceAccumulated.text = String(format: "%.1f m", traveledDistance)
-            speedometerLabel.text = String(format: "%.1f Km/h", abs(lastLocation.speed) * 3600 / 1000)
-        }
-
-        let acc = lastLocation.horizontalAccuracy
-        calori.text = String(acc)
-        if acc >= 0 && acc < REQ_ACC {
-            self.shouldExecute = true
-        }
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        var _error : Bool = false
-        
-        self.locman.delegate = self
-        DispatchQueue.global(qos: .userInteractive).async {
-            
-            self.locman.desiredAccuracy = kCLLocationAccuracyBest
-            self.locman.activityType = .fitness
-            self.locman.distanceFilter = 2.0
-            self.locman.startUpdatingLocation()
-            
-            while(true) {
-                if(self.shouldExecute) {
-                    break
+            if isStarted {
+                
+            } else {
+                isStarted = true
+                timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(BicycleMainViewController.updateCounter), userInfo: nil, repeats: true)
+                
+                self.appDelegate.flagAccumulate = true
+                self.shouldEndExecute = false
+                DispatchQueue.global(qos: .userInteractive).async {
+                    while(true) {
+                        if self.shouldEndExecute {
+                            print("Break")
+                            break
+                        }
+                        self.appDelegate.locman?.startUpdatingLocation()
+                        self.appDelegate.executionGroup.wait()
+                        self.appDelegate.executionGroup.enter()
+                        self.appDelegate.flag = true
+                        while(true) {
+                            if !self.appDelegate.flag {
+                                DispatchQueue.main.async {
+                                    self.gaugeMiddle.rate = CGFloat(self.appDelegate.velocity! / 6.0)
+                                    self.speedometerLabel.text = String(format: "%.1f km/h", self.appDelegate.velocity!)
+                                    self.distanceAccumulated.text = String(format: "%.1f m", self.appDelegate.traveledDistance)
+                                }
+                                break
+                            }
+                            sleep(1)
+                        }
+                        self.appDelegate.executionGroup.leave()
+                    }
                 }
             }
             
-            manageHoler.checkForLocationAccess(always: false, andThen: { () -> Void in
-                
+        }
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        var _error : Bool = false
+        DispatchQueue.global(qos: .userInteractive).async {
+            // Inquire the location manager whether it's good to go
+            if self.isInitial {
+                self.isInitial = false
+                // Wait till previous thread completes its execution
+                self.appDelegate.executionGroup.wait()
+                self.appDelegate.executionGroup.enter()
+                self.appDelegate.flag = true
+                while(true) {
+                    if !self.appDelegate.flag {
+                        DispatchQueue.main.async {
+                            self.DMapView?.setMapCenter(MTMapPoint(geoCoord: MTMapPointGeo(latitude: (self.appDelegate.lastLocation?.coordinate.latitude)!, longitude: (self.appDelegate.lastLocation?.coordinate.longitude)!)),
+                                                        animated: false)
+                        }
+                        break
+                    }
+                    sleep(1)
+                }
+                self.appDelegate.executionGroup.leave()
+            }
+            
+            // And then register a closure for further execution
+            self.appDelegate.manageHolder?.checkForLocationAccess(always: false, andThen: { () -> Void in
                 if let DMapView = self.DMapView {
+                    // Get a human readable address from CLLocation using Daum Map API
                     MTMapReverseGeoCoder.executeFindingAddress(for: DMapView.mapCenterPoint,
                                                                openAPIKey: DMApiKey,
                                                                completionHandler: {(success , addressForMapPoint , error) -> Void in
@@ -274,6 +282,10 @@ class BicycleMainViewController: UIViewController, CLLocationManagerDelegate {
         startButton.isHidden = true
         endButton.isHidden = true
         
+        if let _counter = UserDefaults.standard.integer(forKey: "Accumulated counter") as Int?{
+            self.counter = _counter
+        }
+        
         secondsToHoursMinutesSeconds(counter, result: { (h, m, s) in
             self.timeAccumulated.text = "\(self.timeText(h)):\(self.timeText(m)):\(self.timeText(s))"
         })
@@ -285,7 +297,6 @@ class BicycleMainViewController: UIViewController, CLLocationManagerDelegate {
         secondsToHoursMinutesSeconds(counter, result: { (h, m, s) in
             self.timeAccumulated.text = "\(self.timeText(h)):\(self.timeText(m)):\(self.timeText(s))"
         })
-        
     }
     
     func secondsToHoursMinutesSeconds(_ seconds : Int, result: @escaping (Int, Int, Int)->()) {
