@@ -8,19 +8,46 @@
 
 import UIKit
 
-class BicycleLoginViewController: UIViewController {
+class BicycleLoginViewController: UIViewController, UIAlertViewDelegate{
 
+    @IBOutlet weak var loginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        loginButton.clipsToBounds = true
+        loginButton.layer.cornerRadius = 12
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func login(_ sender: AnyObject) {
+        let session: KOSession = KOSession.shared();
+        
+        if session.isOpen() {
+            session.close()
+        }
+        
+        session.presentingViewController = self.navigationController
+        session.open(completionHandler: { (error) -> Void in
+            session.presentingViewController = nil
+            
+            if !session.isOpen() {
+                switch ((error as! NSError).code) {
+                case Int(KOErrorCancelled.rawValue):
+                    break;
+                default:
+                    UIAlertView(title: "에러", message: error?.localizedDescription, delegate: nil, cancelButtonTitle: "확인").show()
+                    break;
+                }
+            }
+        }, authParams: nil, authTypes: [NSNumber(value: KOAuthType.talk.rawValue), NSNumber(value: KOAuthType.account.rawValue)])
+    }
 
     /*
     // MARK: - Navigation

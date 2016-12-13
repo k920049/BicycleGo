@@ -29,7 +29,8 @@ class BicycleMapViewController: UIViewController,
     
     var searchActive : Bool = false
     var sightMode : Int = 0
-    var markerArray : [TMapMarkerItem]? = nil
+    var markerArray : [TMapMarkerItem2]? = nil
+    var image = UIImage(named: "marker")
     
     @IBAction func didSelectCompass(sender : UIBarButtonItem) {
         if sender == compass {
@@ -56,6 +57,101 @@ class BicycleMapViewController: UIViewController,
             }
         }
     }
+    
+    func drawRecommendedRoad(startLocation : CLLocation?,
+                             endLocation : CLLocation?,
+                             bypassArray : [(Double, Double)]?) {
+        let path = TMapPathData()
+        var bypassTMapPointArray = [TMapPoint]()
+        let startPoint : TMapPoint? = TMapPoint(coordinate: (startLocation?.coordinate)!)
+        let endPoint : TMapPoint? = TMapPoint(coordinate: (endLocation?.coordinate)!)
+        var polyline : TMapPolyLine?
+        
+        let top = (startLocation?.coordinate.latitude)! > (endLocation?.coordinate.latitude)! ? startLocation?.coordinate.latitude : endLocation?.coordinate.latitude
+        let left = (startLocation?.coordinate.longitude)! < (endLocation?.coordinate.longitude)! ? startLocation?.coordinate.longitude : endLocation?.coordinate.longitude
+        let bottom = (startLocation?.coordinate.latitude)! < (endLocation?.coordinate.latitude)! ? startLocation?.coordinate.latitude : endLocation?.coordinate.latitude
+        let right = (startLocation?.coordinate.longitude)! > (endLocation?.coordinate.longitude)! ? startLocation?.coordinate.longitude : endLocation?.coordinate.longitude
+        let centerLatitude = ((startLocation?.coordinate.latitude)! + (endLocation?.coordinate.latitude)!) / 2.0
+        let centerLongitude = ((startLocation?.coordinate.longitude)! + (endLocation?.coordinate.longitude)!) / 2.0
+        let topLeft = TMapPoint(coordinate: CLLocationCoordinate2D(latitude: top!, longitude: left!))
+        let bottomRight = TMapPoint(coordinate: CLLocationCoordinate2D(latitude: bottom!, longitude: right!))
+        let center = TMapPoint(coordinate: CLLocationCoordinate2D(latitude: centerLatitude, longitude: centerLongitude))
+        
+    
+        if let _bypassArray = bypassArray {
+            self.SKMapView?.removeAllTMapMarkerItems()
+            self.SKMapView?.removeAllTMapPolyLines()
+            
+            self.addMarker(title: "start", subTitle: "Description",
+                           position: CLLocation(latitude: (startPoint?.getLatitude())!,
+                                                longitude: (startPoint?.getLongitude())!))
+            self.addMarker(title: "end", subTitle: "Description",
+                           position: CLLocation(latitude: (endPoint?.getLatitude())!,
+                                                longitude: (endPoint?.getLongitude())!))
+            
+            self.markerArray?.removeAll()
+            self.image = UIImage(named: "bypass")
+            for element in _bypassArray {
+                let item = TMapPoint(lon: element.1, lat: element.0)
+                self.addMarker(title: String(arc4random_uniform(1024)),
+                               subTitle: "Description",
+                               position: CLLocation(latitude: element.0, longitude: element.1))
+                bypassTMapPointArray.append(item!)
+            }
+            self.image = UIImage(named: "marker")
+            polyline = path.find(with: BICYCLE_PATH,
+                                 start: startPoint!,
+                                 end: endPoint!,
+                                 passPoints: bypassTMapPointArray,
+                                 searchOption: 0)
+            if polyline == nil {
+                path.find(with: CAR_PATH,
+                          start: startPoint!,
+                          end: endPoint!,
+                          passPoints: bypassTMapPointArray,
+                          searchOption: 0)
+                if polyline == nil {
+                    var polyLineArray = [TMapPolyLine]()
+                    let startPolyline = path.find(with: BICYCLE_PATH,
+                                                 start: startPoint,
+                                                 end: bypassTMapPointArray[0])
+                    if startPolyline != nil {
+                        polyLineArray.append(startPolyline!)
+                    }
+                    self.SKMapView?.showAllPolyLine(polyLineArray)
+                    for ix in 1...bypassTMapPointArray.count - 1 {
+                        let eachPolyline = path.find(with: BICYCLE_PATH,
+                                                     start: bypassTMapPointArray[ix - 1],
+                                                     end: bypassTMapPointArray[ix])
+                        if eachPolyline != nil {
+                            polyLineArray.append(eachPolyline!)
+                        }
+                        // self.SKMapView?.showAllPolyLine(polyLineArray)
+                    }
+                    /*let endPolyline = path.find(with: BICYCLE_PATH,
+                                                 start: bypassTMapPointArray[bypassTMapPointArray.count - 1],
+                                                 end: endPoint)
+                    if endPolyline != nil {
+                        polyLineArray.append(endPolyline!)
+                    }*/
+                    // self.SKMapView?.showAllPolyLine(polyLineArray)
+                } else {
+                    self.SKMapView?.addTMapPath(polyline)
+                }
+            } else {
+                self.SKMapView?.addTMapPath(polyline)
+            }
+            
+        } else {
+            polyline = path.find(with: BICYCLE_PATH,
+                                 start: startPoint!,
+                                 end: endPoint!)
+            self.SKMapView?.addTMapPath(polyline)
+        }
+        self.SKMapView?.zoom(toTMapPointLeftTop: topLeft, rightBottom: bottomRight)
+        self.SKMapView?.setCenter(center)
+        self.SKMapView?.zoomOut()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,6 +176,21 @@ class BicycleMapViewController: UIViewController,
         
         self.DKMapView = self.appDelegate.DKMapView
         self.DKMapView?.daumMapApiKey = DMApiKey
+        
+        let rootTabBarController = self.tabBarController as! BicycleTabBarController
+        if let _currentRoad = rootTabBarController.currentRoad {
+            
+            let startLocation = CLLocation(latitude: _currentRoad.startLatitude!,
+                                           longitude: _currentRoad.startLongitude!)
+            let endLocation = CLLocation(latitude: _currentRoad.endLatitude!,
+                                         longitude: _currentRoad.endLongitude!)
+            
+            let bypassArray = _currentRoad.authCenter
+            drawRecommendedRoad(startLocation: startLocation,
+                                endLocation: endLocation,
+                                bypassArray: bypassArray)
+            rootTabBarController.currentRoad = nil
+        }
     }
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
@@ -108,6 +219,7 @@ class BicycleMapViewController: UIViewController,
         let result = self.searchKeyword.search()
         if let _result = result {
             self.SKMapView?.removeAllTMapMarkerItems()
+            
             for element in _result {
                 self.addMarker(title: element.title, subTitle: "Description", position: CLLocation(latitude: element.latitude, longitude: element.longitude))
             }
@@ -176,20 +288,19 @@ class BicycleMapViewController: UIViewController,
     }
     
     func addMarker(title : String?, subTitle : String?, position : CLLocation?) {
-        let image = UIImage(named: "marker")
-        
+    
         if self.markerArray == nil {
-            self.markerArray = [TMapMarkerItem]()
+            self.markerArray = [TMapMarkerItem2]()
         }
         
         if let position = position {
             let mapPoint = TMapPoint(coordinate: position.coordinate)
-            let mapMarker = TMapMarkerItem()
+            let mapMarker = TMapMarkerItem2()
             mapMarker.setTMapPoint(mapPoint)
             mapMarker.setIcon(image)
             
             self.markerArray?.append(mapMarker)
-            self.SKMapView?.addTMapMarkerItemID(title?.sha1(), marker: mapMarker)
+            self.SKMapView?.addTMapMarkerItemID(title?.sha1(), markerItem2: mapMarker)
         }
         
     }

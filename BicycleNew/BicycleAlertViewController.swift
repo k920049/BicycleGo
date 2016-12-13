@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+import UIKit
+
+extension UIAlertView {
+    
+    static func showMessage(_ message: String) {
+        self.init(title: "", message: message, delegate: nil, cancelButtonTitle: "OK").show()
+    }
+}

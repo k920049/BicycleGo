@@ -86,6 +86,7 @@ class BicycleAVCameraViewController: UIViewController, AVCaptureMetadataOutputOb
             qrCodeFrameView?.frame = barCodeObject!.bounds
             if metadataObj.stringValue != nil {
                 messageLabel.text = metadataObj.stringValue
+                
             }
         }
     }

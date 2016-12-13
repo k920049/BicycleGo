@@ -11,6 +11,7 @@ import UIKit
 class BicycleTabBarController: UITabBarController {
     
     var currentBarIndex : Int = 0
+    var currentRoad : ItemRoad? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,7 @@ class BicycleTabBarController: UITabBarController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.selectedIndex = currentBarIndex
+        print(String(format: "Selected index %d", currentBarIndex))
         super.viewWillAppear(animated)
     }
 
@@ -29,6 +31,9 @@ class BicycleTabBarController: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
     
+    func setCurrentRoad(_currentRoad : ItemRoad?) {
+        self.currentRoad = _currentRoad
+    }
 
     /*
     // MARK: - Navigation

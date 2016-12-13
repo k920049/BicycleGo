@@ -53,6 +53,7 @@ static CGFloat statusBarAdjustment( UIView* view )
 @interface SWRevealView: UIView
 {
     __weak SWRevealViewController *_c;
+    ItemRoad *current;
 }
 
 @property (nonatomic, readonly) UIView *rearView;
@@ -1876,21 +1877,15 @@ NSString * const SWSegueRightIdentifier = @"sw_right";
 - (void)perform
 {
     SWRevealViewController *rvc = [self.sourceViewController revealViewController];
-    BicycleTabBarController *dvc = self.destinationViewController;
-    
+   
     if([self.identifier  isEqual: @"showHome"]) {
+        BicycleTabBarController *dvc = self.destinationViewController;
         dvc.currentBarIndex = 0;
-    }else if ([self.identifier isEqual: @"showSettings"]) {
-        dvc.currentBarIndex = 1;
-    } else if ([self.identifier isEqual: @"showNotification"]) {
-        dvc.currentBarIndex = 2;
-    } else if ([self.identifier isEqual: @"showInfo"]) {
-        dvc.currentBarIndex = 3;
+        [rvc pushFrontViewController:dvc animated:YES];
     } else {
-        dvc.currentBarIndex = 0;
+        UIViewController *dvc = self.destinationViewController;
+        [rvc pushFrontViewController:dvc animated:YES];
     }
-
-    [rvc pushFrontViewController:dvc animated:YES];
 }
 
 @end

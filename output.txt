@@ -1,0 +1,95 @@
+[
+    {
+        "code": "0"
+    },
+    {
+        "id": "1",
+        "title": "아라 자전거길",
+        "startLatitude": "37.59832",
+        "startLongitude": "126.801624",
+        "endLatitude": "37.557175",
+        "endLongitude": "126.603546",
+        "authCenter": "37.59832,126.801624;37.557175,126.603546"
+    },
+    {
+        "id": "10",
+        "title": "중랑천 자전거길",
+        "startLatitude": "37.546619",
+        "startLongitude": "127.029934",
+        "endLatitude": "37.761894",
+        "endLongitude": "127.044525",
+        "authCenter": "0"
+    },
+    {
+        "id": "2",
+        "title": "안양천 자전거길",
+        "startLatitude": "37.553458",
+        "startLongitude": "126.878185",
+        "endLatitude": "37.34778",
+        "endLongitude": "126.973211",
+        "authCenter": "0"
+    },
+    {
+        "id": "3",
+        "title": "금호강 자전거길",
+        "startLatitude": "35.869334",
+        "startLongitude": "128.467126",
+        "endLatitude": "35.890371",
+        "endLongitude": "128.786888",
+        "authCenter": "0"
+    },
+    {
+        "id": "4",
+        "title": "금강 자전거길",
+        "startLatitude": "36.022724",
+        "startLongitude": "126.740685",
+        "endLatitude": "36.474997",
+        "endLongitude": "127.48003",
+        "authCenter": "36.01967,126.765575;36.131359,126.920929;36.3172,126.94376;36.46699,127.104006;36.476274,127.260282;36.474997,127.48003"
+    },
+    {
+        "id": "5",
+        "title": "한강 자전거길 하류",
+        "startLatitude": "37.547674",
+        "startLongitude": "127.240133",
+        "endLatitude": "37.598762",
+        "endLongitude": "126.80171",
+        "authCenter": "0"
+    },
+    {
+        "id": "6",
+        "title": "탄천 자전거 길",
+        "startLatitude": "37.518951",
+        "startLongitude": "127.066627",
+        "endLatitude": "37.298193",
+        "endLongitude": "127.107654",
+        "authCenter": "0"
+    },
+    {
+        "id": "7",
+        "title": "갑천 자전거길",
+        "startLatitude": "36.451665",
+        "startLongitude": "127.402267",
+        "endLatitude": "36.306549",
+        "endLongitude": "127.356863",
+        "authCenter": "0"
+    },
+    {
+        "id": "8",
+        "title": "파주 DMZ 자전거길",
+        "startLatitude": "37.899917",
+        "startLongitude": "126.78875",
+        "endLatitude": "37.918201",
+        "endLongitude": "126.724205",
+        "authCenter": "37.899917,126.78875;37.890841,126.738625;37.918201,126.724205"
+    },
+    {
+        "id": "9",
+        "title": "수원천 자전거길",
+        "startLatitude": "37.300275",
+        "startLongitude": "127.028646",
+        "endLatitude": "37.249461",
+        "endLongitude": "127.009077",
+        "authCenter": "0"
+    }
+]

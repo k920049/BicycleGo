@@ -14,6 +14,11 @@
 		2803720A1DF028C200FDCC47 /* ItemRSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280372091DF028C200FDCC47 /* ItemRSS.swift */; };
 		2803720C1DF029C700FDCC47 /* SearchAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2803720B1DF029C700FDCC47 /* SearchAddress.swift */; };
 		2803720E1DF02A1700FDCC47 /* BicycleAlertViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2803720D1DF02A1700FDCC47 /* BicycleAlertViewControllerExtension.swift */; };
+		280FE4341DFE554C004383F2 /* BicycleRecommendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280FE4331DFE554C004383F2 /* BicycleRecommendTableViewController.swift */; };
+		280FE4361DFE5C07004383F2 /* BicycleRecommendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280FE4351DFE5C07004383F2 /* BicycleRecommendTableViewCell.swift */; };
+		280FE4381DFE939E004383F2 /* BicycleJoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280FE4371DFE939E004383F2 /* BicycleJoinViewController.swift */; };
+		280FE43A1DFE9577004383F2 /* BicycleAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280FE4391DFE9577004383F2 /* BicycleAlertViewController.swift */; };
+		280FE43C1DFE9A85004383F2 /* BicycleLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280FE43B1DFE9A85004383F2 /* BicycleLoginViewController.swift */; };
 		2811F4721DF7E5A6004D118A /* HeadingAngleSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F4651DF7E5A6004D118A /* HeadingAngleSmall.png */; };
 		2811F4731DF7E5A6004D118A /* HeadingAngleSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F4661DF7E5A6004D118A /* HeadingAngleSmall@2x.png */; };
 		2811F4741DF7E5A6004D118A /* icon_clustering.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F4671DF7E5A6004D118A /* icon_clustering.png */; };
@@ -55,6 +60,8 @@
 		28881D781DFBDD41001C0CDE /* BicycleCertificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28881D771DFBDD41001C0CDE /* BicycleCertificationViewController.swift */; };
 		28C1A3B71DF2B187003B1068 /* BicycleMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1A3B61DF2B187003B1068 /* BicycleMenuTableViewController.swift */; };
 		28D2F8471DF186E200F59A7B /* BicycleManagerHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D2F8461DF186E200F59A7B /* BicycleManagerHolder.swift */; };
+		28F087F91DFF9F1D00EEAF32 /* SearchRoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F087F81DFF9F1D00EEAF32 /* SearchRoad.swift */; };
+		28F087FB1DFF9F6900EEAF32 /* ItemRoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F087FA1DFF9F6900EEAF32 /* ItemRoad.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +71,11 @@
 		280372091DF028C200FDCC47 /* ItemRSS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemRSS.swift; sourceTree = "<group>"; };
 		2803720B1DF029C700FDCC47 /* SearchAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAddress.swift; sourceTree = "<group>"; };
 		2803720D1DF02A1700FDCC47 /* BicycleAlertViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleAlertViewControllerExtension.swift; sourceTree = "<group>"; };
+		280FE4331DFE554C004383F2 /* BicycleRecommendTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleRecommendTableViewController.swift; sourceTree = "<group>"; };
+		280FE4351DFE5C07004383F2 /* BicycleRecommendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleRecommendTableViewCell.swift; sourceTree = "<group>"; };
+		280FE4371DFE939E004383F2 /* BicycleJoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleJoinViewController.swift; sourceTree = "<group>"; };
+		280FE4391DFE9577004383F2 /* BicycleAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleAlertViewController.swift; sourceTree = "<group>"; };
+		280FE43B1DFE9A85004383F2 /* BicycleLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleLoginViewController.swift; sourceTree = "<group>"; };
 		2811F4511DF7E5A6004D118A /* BizCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BizCategory.h; sourceTree = "<group>"; };
 		2811F4521DF7E5A6004D118A /* TMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMap.h; sourceTree = "<group>"; };
 		2811F4531DF7E5A6004D118A /* TMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapAnnotation.h; sourceTree = "<group>"; };
@@ -128,6 +140,8 @@
 		28881D771DFBDD41001C0CDE /* BicycleCertificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleCertificationViewController.swift; sourceTree = "<group>"; };
 		28C1A3B61DF2B187003B1068 /* BicycleMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleMenuTableViewController.swift; sourceTree = "<group>"; };
 		28D2F8461DF186E200F59A7B /* BicycleManagerHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleManagerHolder.swift; sourceTree = "<group>"; };
+		28F087F81DFF9F1D00EEAF32 /* SearchRoad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRoad.swift; sourceTree = "<group>"; };
+		28F087FA1DFF9F6900EEAF32 /* ItemRoad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemRoad.swift; sourceTree = "<group>"; };
 		33ACA3B7834DE76CCC1F7047 /* Pods_BicycleNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BicycleNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DE454C18F4BA0206AF6B67 /* Pods-BicycleNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BicycleNew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BicycleNew/Pods-BicycleNew.debug.xcconfig"; sourceTree = "<group>"; };
 		F621ABC1190596D6BABF8297 /* Pods-BicycleNew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BicycleNew.release.xcconfig"; path = "Pods/Target Support Files/Pods-BicycleNew/Pods-BicycleNew.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,9 +176,11 @@
 				280372031DF027DE00FDCC47 /* Item.swift */,
 				280372051DF0280300FDCC47 /* ItemAddress.swift */,
 				280372091DF028C200FDCC47 /* ItemRSS.swift */,
+				28F087FA1DFF9F6900EEAF32 /* ItemRoad.swift */,
 				2803720B1DF029C700FDCC47 /* SearchAddress.swift */,
 				280372071DF0282600FDCC47 /* SearchKMA.swift */,
 				287BD49F1DF6AFB000257F48 /* SearchKeyword.swift */,
+				28F087F81DFF9F1D00EEAF32 /* SearchRoad.swift */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -175,6 +191,7 @@
 				287B24A41DEEDE9500D654AA /* BicycleNavigationControllerExtension.swift */,
 				2803720D1DF02A1700FDCC47 /* BicycleAlertViewControllerExtension.swift */,
 				2811F47F1DF7F97D004D118A /* BicycleStringExtension.swift */,
+				280FE4391DFE9577004383F2 /* BicycleAlertViewController.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -313,10 +330,14 @@
 		28C1A3B51DF29B2A003B1068 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				280FE4371DFE939E004383F2 /* BicycleJoinViewController.swift */,
+				280FE43B1DFE9A85004383F2 /* BicycleLoginViewController.swift */,
 				287B24A61DEEDFF100D654AA /* BicycleMainViewController.swift */,
 				286C8CC61DF523E900D1717B /* BicycleMapViewController.swift */,
 				28881D751DFBDD32001C0CDE /* BicycleAVCameraViewController.swift */,
 				28881D771DFBDD41001C0CDE /* BicycleCertificationViewController.swift */,
+				280FE4331DFE554C004383F2 /* BicycleRecommendTableViewController.swift */,
+				280FE4351DFE5C07004383F2 /* BicycleRecommendTableViewCell.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -479,6 +500,7 @@
 			files = (
 				287B248A1DEED72600D654AA /* ViewController.swift in Sources */,
 				280372081DF0282600FDCC47 /* SearchKMA.swift in Sources */,
+				280FE4341DFE554C004383F2 /* BicycleRecommendTableViewController.swift in Sources */,
 				28881D781DFBDD41001C0CDE /* BicycleCertificationViewController.swift in Sources */,
 				280372061DF0280300FDCC47 /* ItemAddress.swift in Sources */,
 				287B24A51DEEDE9500D654AA /* BicycleNavigationControllerExtension.swift in Sources */,
@@ -486,18 +508,24 @@
 				287B24AB1DEEE4A200D654AA /* BicycleRevealMenuTableViewController.swift in Sources */,
 				28C1A3B71DF2B187003B1068 /* BicycleMenuTableViewController.swift in Sources */,
 				2803720C1DF029C700FDCC47 /* SearchAddress.swift in Sources */,
+				280FE43C1DFE9A85004383F2 /* BicycleLoginViewController.swift in Sources */,
 				2811F4801DF7F97D004D118A /* BicycleStringExtension.swift in Sources */,
 				2803720E1DF02A1700FDCC47 /* BicycleAlertViewControllerExtension.swift in Sources */,
+				280FE4381DFE939E004383F2 /* BicycleJoinViewController.swift in Sources */,
+				28F087FB1DFF9F6900EEAF32 /* ItemRoad.swift in Sources */,
 				287BD4A01DF6AFB000257F48 /* SearchKeyword.swift in Sources */,
 				2803720A1DF028C200FDCC47 /* ItemRSS.swift in Sources */,
 				28881D761DFBDD32001C0CDE /* BicycleAVCameraViewController.swift in Sources */,
 				280372041DF027DE00FDCC47 /* Item.swift in Sources */,
+				280FE43A1DFE9577004383F2 /* BicycleAlertViewController.swift in Sources */,
 				287B24AD1DEEE67D00D654AA /* BicycleTabBarController.swift in Sources */,
 				28D2F8471DF186E200F59A7B /* BicycleManagerHolder.swift in Sources */,
 				2851D2451DF03FCA00A1FC5D /* BicycleConstants.swift in Sources */,
 				287B24A71DEEDFF100D654AA /* BicycleMainViewController.swift in Sources */,
 				287B249C1DEED78E00D654AA /* SWRevealViewController.m in Sources */,
+				280FE4361DFE5C07004383F2 /* BicycleRecommendTableViewCell.swift in Sources */,
 				286C8CC71DF523E900D1717B /* BicycleMapViewController.swift in Sources */,
+				28F087F91DFF9F1D00EEAF32 /* SearchRoad.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
