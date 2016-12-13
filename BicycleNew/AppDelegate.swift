@@ -46,9 +46,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     */
     var loginViewController: UIViewController?
     var mainViewController: UIViewController?
-    
+    var realMainViewController: UIViewController?
+    var jsonString: String?
     
     var deviceToken: Data? = nil
+    
+    fileprivate func requestMe(_ displayResult: Bool = false) {
+        KOSessionTask.meTask { [weak self] (user, error) -> Void in
+            if error != nil {
+                self?.reloadRootViewController()
+            } else {
+                self?.doneSignup = true
+                self?.user = (user as! KOUser)
+                
+                self?.jsonString = "{\"kakao\":\"\((self?.user!.id)!)\"}"
+                
+                self?.reloadRootViewController()
+            }
+        }
+    }
     
     fileprivate func setupEntryController() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -62,6 +78,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         let viewController2 = storyboard.instantiateViewController(withIdentifier: "main") as UIViewController
         navigationController2.pushViewController(viewController2, animated: true)
         self.mainViewController = navigationController2
+        
+        self.realMainViewController = self.mainstoryboard.instantiateViewController(withIdentifier: "RevealView")
     }
     
     fileprivate func reloadRootViewController() {
@@ -76,7 +94,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
             mainViewController.popToRootViewController(animated: true)
         }
         
-        self.window?.rootViewController = isOpened ? self.mainViewController : self.loginViewController
+        if(isOpened){
+            print("4444")
+            let myUrl = URL(string: "http://kirkee2.cafe24.com/CheckLogin.php");
+            
+            var request = URLRequest(url:myUrl!)
+            
+            request.httpMethod = "POST"// Compose a query string
+            
+            request.httpBody = jsonString?.data(using: String.Encoding.utf8, allowLossyConversion: true)
+            
+            let task = URLSession.shared.dataTask(with: request) { (data: Data?, response: URLResponse?, error: Error?) in
+                
+                if error != nil
+                {
+                    return
+                }
+                
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? NSDictionary
+                    
+                    if let parseJSON = json {
+                        
+                        // Now we can access value of First Name by its key
+                        let codeRespond:String = parseJSON["code"] as! String
+                        
+                        if(Int(codeRespond)! == 1){
+                            self.window?.rootViewController = self.mainViewController
+                        }else{
+                            DispatchQueue.main.async(){
+                                self.window?.rootViewController?.present(self.mainViewController!, animated: true, completion: nil)
+                            }
+                        }
+                    }
+                } catch {
+                    print(error)
+                }
+            }
+            task.resume()
+        }else{
+            self.window?.rootViewController = self.loginViewController
+        }
+        
         self.window?.makeKeyAndVisible()
     }
     
@@ -103,6 +162,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
          
          */
         
+        /*
+         ==================================================
+         AppDelegate : application
+         ==================================================
+         Made by : 건준
+         Description :
+         * instantiate some of the initial settings of the application
+         
+         */
+        setupEntryController()
+        requestMe()
+        
+        /////////
+        
         // Update the navigation bar's font style and size
         if let barFont = UIFont(name: "Avenir-Light", size: 24.0) {
             UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white, NSFontAttributeName:barFont]
@@ -116,6 +189,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         self.manageHolder = ManagerHolder(locationManager: self.locman!)
         
         self.locman?.delegate = self
+    
         
         /*
          ==================================================
@@ -154,7 +228,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     }
     
     func kakaoSessionDidChangeWithNotification() {
-        reloadRootViewController()
+        requestMe()
+        //reloadRootViewController()
     }
 
     func application(_ application: UIApplication, handleOpen url: URL) -> Bool {

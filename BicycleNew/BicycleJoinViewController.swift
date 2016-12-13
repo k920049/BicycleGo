@@ -297,6 +297,8 @@ class BicycleJoinViewController: UIViewController ,UIImagePickerControllerDelega
                                             
                                             print("회원가입 성공")
                                             let mainViewController = self.mainstoryboard.instantiateViewController(withIdentifier: "RevealView")
+                                            self.dismiss(animated : false, completion: nil);
+
                                             self.present(mainViewController, animated: true, completion: nil)
                                         }
                                     }
