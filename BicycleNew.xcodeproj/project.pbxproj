@@ -19,20 +19,20 @@
 		280FE4381DFE939E004383F2 /* BicycleJoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280FE4371DFE939E004383F2 /* BicycleJoinViewController.swift */; };
 		280FE43A1DFE9577004383F2 /* BicycleAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280FE4391DFE9577004383F2 /* BicycleAlertViewController.swift */; };
 		280FE43C1DFE9A85004383F2 /* BicycleLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280FE43B1DFE9A85004383F2 /* BicycleLoginViewController.swift */; };
-		2811F4721DF7E5A6004D118A /* HeadingAngleSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F4651DF7E5A6004D118A /* HeadingAngleSmall.png */; };
-		2811F4731DF7E5A6004D118A /* HeadingAngleSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F4661DF7E5A6004D118A /* HeadingAngleSmall@2x.png */; };
-		2811F4741DF7E5A6004D118A /* icon_clustering.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F4671DF7E5A6004D118A /* icon_clustering.png */; };
-		2811F4751DF7E5A6004D118A /* icon_clustering@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F4681DF7E5A6004D118A /* icon_clustering@2x.png */; };
-		2811F4761DF7E5A6004D118A /* mapbg_tlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F4691DF7E5A6004D118A /* mapbg_tlogo.png */; };
-		2811F4771DF7E5A6004D118A /* mapbg_tlogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F46A1DF7E5A6004D118A /* mapbg_tlogo@2x.png */; };
-		2811F4781DF7E5A6004D118A /* poweredby.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F46B1DF7E5A6004D118A /* poweredby.png */; };
-		2811F4791DF7E5A6004D118A /* poweredby@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F46C1DF7E5A6004D118A /* poweredby@2x.png */; };
-		2811F47A1DF7E5A6004D118A /* TrackingDot.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F46D1DF7E5A6004D118A /* TrackingDot.png */; };
-		2811F47B1DF7E5A6004D118A /* TrackingDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F46E1DF7E5A6004D118A /* TrackingDot@2x.png */; };
-		2811F47C1DF7E5A6004D118A /* TrackingDotHalo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F46F1DF7E5A6004D118A /* TrackingDotHalo.png */; };
-		2811F47D1DF7E5A6004D118A /* TrackingDotHalo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2811F4701DF7E5A6004D118A /* TrackingDotHalo@2x.png */; };
-		2811F47E1DF7E5A6004D118A /* TopLib_Op.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2811F4711DF7E5A6004D118A /* TopLib_Op.a */; };
 		2811F4801DF7F97D004D118A /* BicycleStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2811F47F1DF7F97D004D118A /* BicycleStringExtension.swift */; };
+		283C6F801E00F88300F33287 /* HeadingAngleSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 283C6F731E00F88300F33287 /* HeadingAngleSmall.png */; };
+		283C6F811E00F88300F33287 /* HeadingAngleSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 283C6F741E00F88300F33287 /* HeadingAngleSmall@2x.png */; };
+		283C6F821E00F88300F33287 /* icon_clustering.png in Resources */ = {isa = PBXBuildFile; fileRef = 283C6F751E00F88300F33287 /* icon_clustering.png */; };
+		283C6F831E00F88300F33287 /* icon_clustering@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 283C6F761E00F88300F33287 /* icon_clustering@2x.png */; };
+		283C6F841E00F88300F33287 /* mapbg_tlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 283C6F771E00F88300F33287 /* mapbg_tlogo.png */; };
+		283C6F851E00F88300F33287 /* mapbg_tlogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 283C6F781E00F88300F33287 /* mapbg_tlogo@2x.png */; };
+		283C6F861E00F88300F33287 /* poweredby.png in Resources */ = {isa = PBXBuildFile; fileRef = 283C6F791E00F88300F33287 /* poweredby.png */; };
+		283C6F871E00F88300F33287 /* poweredby@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 283C6F7A1E00F88300F33287 /* poweredby@2x.png */; };
+		283C6F881E00F88300F33287 /* TrackingDot.png in Resources */ = {isa = PBXBuildFile; fileRef = 283C6F7B1E00F88300F33287 /* TrackingDot.png */; };
+		283C6F891E00F88300F33287 /* TrackingDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 283C6F7C1E00F88300F33287 /* TrackingDot@2x.png */; };
+		283C6F8A1E00F88300F33287 /* TrackingDotHalo.png in Resources */ = {isa = PBXBuildFile; fileRef = 283C6F7D1E00F88300F33287 /* TrackingDotHalo.png */; };
+		283C6F8B1E00F88300F33287 /* TrackingDotHalo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 283C6F7E1E00F88300F33287 /* TrackingDotHalo@2x.png */; };
+		283C6F8C1E00F88300F33287 /* TopLib_Op.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 283C6F7F1E00F88300F33287 /* TopLib_Op.a */; };
 		2851D2321DF03E7F00A1FC5D /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851D2301DF03E7F00A1FC5D /* DaumMap.framework */; };
 		2851D2331DF03E7F00A1FC5D /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851D2311DF03E7F00A1FC5D /* KakaoOpenSDK.framework */; };
 		2851D2351DF03ED100A1FC5D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2851D2341DF03ED100A1FC5D /* OpenGLES.framework */; };
@@ -76,39 +76,39 @@
 		280FE4371DFE939E004383F2 /* BicycleJoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleJoinViewController.swift; sourceTree = "<group>"; };
 		280FE4391DFE9577004383F2 /* BicycleAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleAlertViewController.swift; sourceTree = "<group>"; };
 		280FE43B1DFE9A85004383F2 /* BicycleLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleLoginViewController.swift; sourceTree = "<group>"; };
-		2811F4511DF7E5A6004D118A /* BizCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BizCategory.h; sourceTree = "<group>"; };
-		2811F4521DF7E5A6004D118A /* TMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMap.h; sourceTree = "<group>"; };
-		2811F4531DF7E5A6004D118A /* TMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapAnnotation.h; sourceTree = "<group>"; };
-		2811F4541DF7E5A6004D118A /* TMapBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapBaseView.h; sourceTree = "<group>"; };
-		2811F4551DF7E5A6004D118A /* TMapCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapCircle.h; sourceTree = "<group>"; };
-		2811F4561DF7E5A6004D118A /* TMapGpsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapGpsManager.h; sourceTree = "<group>"; };
-		2811F4571DF7E5A6004D118A /* TMapKatec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapKatec.h; sourceTree = "<group>"; };
-		2811F4581DF7E5A6004D118A /* TMapMarkerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapMarkerItem.h; sourceTree = "<group>"; };
-		2811F4591DF7E5A6004D118A /* TMapMarkerItem2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapMarkerItem2.h; sourceTree = "<group>"; };
-		2811F45A1DF7E5A6004D118A /* TMapObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapObject.h; sourceTree = "<group>"; };
-		2811F45B1DF7E5A6004D118A /* TMapOverlayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapOverlayItem.h; sourceTree = "<group>"; };
-		2811F45C1DF7E5A6004D118A /* TMapPathData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapPathData.h; sourceTree = "<group>"; };
-		2811F45D1DF7E5A6004D118A /* TMapPOIItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapPOIItem.h; sourceTree = "<group>"; };
-		2811F45E1DF7E5A6004D118A /* TMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapPoint.h; sourceTree = "<group>"; };
-		2811F45F1DF7E5A6004D118A /* TMapPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapPolygon.h; sourceTree = "<group>"; };
-		2811F4601DF7E5A6004D118A /* TMapPolyLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapPolyLine.h; sourceTree = "<group>"; };
-		2811F4611DF7E5A6004D118A /* TMapTapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapTapi.h; sourceTree = "<group>"; };
-		2811F4621DF7E5A6004D118A /* TMapType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapType.h; sourceTree = "<group>"; };
-		2811F4631DF7E5A6004D118A /* TMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapView.h; sourceTree = "<group>"; };
-		2811F4651DF7E5A6004D118A /* HeadingAngleSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeadingAngleSmall.png; sourceTree = "<group>"; };
-		2811F4661DF7E5A6004D118A /* HeadingAngleSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HeadingAngleSmall@2x.png"; sourceTree = "<group>"; };
-		2811F4671DF7E5A6004D118A /* icon_clustering.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_clustering.png; sourceTree = "<group>"; };
-		2811F4681DF7E5A6004D118A /* icon_clustering@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_clustering@2x.png"; sourceTree = "<group>"; };
-		2811F4691DF7E5A6004D118A /* mapbg_tlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapbg_tlogo.png; sourceTree = "<group>"; };
-		2811F46A1DF7E5A6004D118A /* mapbg_tlogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapbg_tlogo@2x.png"; sourceTree = "<group>"; };
-		2811F46B1DF7E5A6004D118A /* poweredby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poweredby.png; sourceTree = "<group>"; };
-		2811F46C1DF7E5A6004D118A /* poweredby@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poweredby@2x.png"; sourceTree = "<group>"; };
-		2811F46D1DF7E5A6004D118A /* TrackingDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrackingDot.png; sourceTree = "<group>"; };
-		2811F46E1DF7E5A6004D118A /* TrackingDot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TrackingDot@2x.png"; sourceTree = "<group>"; };
-		2811F46F1DF7E5A6004D118A /* TrackingDotHalo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrackingDotHalo.png; sourceTree = "<group>"; };
-		2811F4701DF7E5A6004D118A /* TrackingDotHalo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TrackingDotHalo@2x.png"; sourceTree = "<group>"; };
-		2811F4711DF7E5A6004D118A /* TopLib_Op.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = TopLib_Op.a; sourceTree = "<group>"; };
 		2811F47F1DF7F97D004D118A /* BicycleStringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BicycleStringExtension.swift; sourceTree = "<group>"; };
+		283C6F5F1E00F88300F33287 /* BizCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BizCategory.h; sourceTree = "<group>"; };
+		283C6F601E00F88300F33287 /* TMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMap.h; sourceTree = "<group>"; };
+		283C6F611E00F88300F33287 /* TMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapAnnotation.h; sourceTree = "<group>"; };
+		283C6F621E00F88300F33287 /* TMapBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapBaseView.h; sourceTree = "<group>"; };
+		283C6F631E00F88300F33287 /* TMapCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapCircle.h; sourceTree = "<group>"; };
+		283C6F641E00F88300F33287 /* TMapGpsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapGpsManager.h; sourceTree = "<group>"; };
+		283C6F651E00F88300F33287 /* TMapKatec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapKatec.h; sourceTree = "<group>"; };
+		283C6F661E00F88300F33287 /* TMapMarkerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapMarkerItem.h; sourceTree = "<group>"; };
+		283C6F671E00F88300F33287 /* TMapMarkerItem2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapMarkerItem2.h; sourceTree = "<group>"; };
+		283C6F681E00F88300F33287 /* TMapObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapObject.h; sourceTree = "<group>"; };
+		283C6F691E00F88300F33287 /* TMapOverlayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapOverlayItem.h; sourceTree = "<group>"; };
+		283C6F6A1E00F88300F33287 /* TMapPathData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapPathData.h; sourceTree = "<group>"; };
+		283C6F6B1E00F88300F33287 /* TMapPOIItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapPOIItem.h; sourceTree = "<group>"; };
+		283C6F6C1E00F88300F33287 /* TMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapPoint.h; sourceTree = "<group>"; };
+		283C6F6D1E00F88300F33287 /* TMapPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapPolygon.h; sourceTree = "<group>"; };
+		283C6F6E1E00F88300F33287 /* TMapPolyLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapPolyLine.h; sourceTree = "<group>"; };
+		283C6F6F1E00F88300F33287 /* TMapTapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapTapi.h; sourceTree = "<group>"; };
+		283C6F701E00F88300F33287 /* TMapType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapType.h; sourceTree = "<group>"; };
+		283C6F711E00F88300F33287 /* TMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMapView.h; sourceTree = "<group>"; };
+		283C6F731E00F88300F33287 /* HeadingAngleSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeadingAngleSmall.png; sourceTree = "<group>"; };
+		283C6F741E00F88300F33287 /* HeadingAngleSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HeadingAngleSmall@2x.png"; sourceTree = "<group>"; };
+		283C6F751E00F88300F33287 /* icon_clustering.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_clustering.png; sourceTree = "<group>"; };
+		283C6F761E00F88300F33287 /* icon_clustering@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_clustering@2x.png"; sourceTree = "<group>"; };
+		283C6F771E00F88300F33287 /* mapbg_tlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapbg_tlogo.png; sourceTree = "<group>"; };
+		283C6F781E00F88300F33287 /* mapbg_tlogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapbg_tlogo@2x.png"; sourceTree = "<group>"; };
+		283C6F791E00F88300F33287 /* poweredby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poweredby.png; sourceTree = "<group>"; };
+		283C6F7A1E00F88300F33287 /* poweredby@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poweredby@2x.png"; sourceTree = "<group>"; };
+		283C6F7B1E00F88300F33287 /* TrackingDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrackingDot.png; sourceTree = "<group>"; };
+		283C6F7C1E00F88300F33287 /* TrackingDot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TrackingDot@2x.png"; sourceTree = "<group>"; };
+		283C6F7D1E00F88300F33287 /* TrackingDotHalo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrackingDotHalo.png; sourceTree = "<group>"; };
+		283C6F7E1E00F88300F33287 /* TrackingDotHalo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TrackingDotHalo@2x.png"; sourceTree = "<group>"; };
+		283C6F7F1E00F88300F33287 /* TopLib_Op.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = TopLib_Op.a; sourceTree = "<group>"; };
 		2851D2301DF03E7F00A1FC5D /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DaumMap.framework; sourceTree = "<group>"; };
 		2851D2311DF03E7F00A1FC5D /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		2851D2341DF03ED100A1FC5D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -154,7 +154,7 @@
 			files = (
 				2851D2431DF03F0E00A1FC5D /* MapKit.framework in Frameworks */,
 				2851D2411DF03F0800A1FC5D /* libsqlite3.tbd in Frameworks */,
-				2811F47E1DF7E5A6004D118A /* TopLib_Op.a in Frameworks */,
+				283C6F8C1E00F88300F33287 /* TopLib_Op.a in Frameworks */,
 				2851D23F1DF03EFF00A1FC5D /* libxml2.tbd in Frameworks */,
 				2851D23D1DF03EFA00A1FC5D /* libstdc++.6.tbd in Frameworks */,
 				2851D23B1DF03EED00A1FC5D /* QuartzCore.framework in Frameworks */,
@@ -214,58 +214,58 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2811F44F1DF7E5A6004D118A /* lib */ = {
+		283C6F5D1E00F88300F33287 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				2811F4501DF7E5A6004D118A /* Headers */,
-				2811F4641DF7E5A6004D118A /* Images */,
-				2811F4711DF7E5A6004D118A /* TopLib_Op.a */,
+				283C6F5E1E00F88300F33287 /* Headers */,
+				283C6F721E00F88300F33287 /* Images */,
+				283C6F7F1E00F88300F33287 /* TopLib_Op.a */,
 			);
 			name = lib;
-			path = "../../../Downloads/[iOS]TmapSDK_배포압축용_1.0.30/lib";
+			path = BicycleNew/lib;
 			sourceTree = "<group>";
 		};
-		2811F4501DF7E5A6004D118A /* Headers */ = {
+		283C6F5E1E00F88300F33287 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				2811F4511DF7E5A6004D118A /* BizCategory.h */,
-				2811F4521DF7E5A6004D118A /* TMap.h */,
-				2811F4531DF7E5A6004D118A /* TMapAnnotation.h */,
-				2811F4541DF7E5A6004D118A /* TMapBaseView.h */,
-				2811F4551DF7E5A6004D118A /* TMapCircle.h */,
-				2811F4561DF7E5A6004D118A /* TMapGpsManager.h */,
-				2811F4571DF7E5A6004D118A /* TMapKatec.h */,
-				2811F4581DF7E5A6004D118A /* TMapMarkerItem.h */,
-				2811F4591DF7E5A6004D118A /* TMapMarkerItem2.h */,
-				2811F45A1DF7E5A6004D118A /* TMapObject.h */,
-				2811F45B1DF7E5A6004D118A /* TMapOverlayItem.h */,
-				2811F45C1DF7E5A6004D118A /* TMapPathData.h */,
-				2811F45D1DF7E5A6004D118A /* TMapPOIItem.h */,
-				2811F45E1DF7E5A6004D118A /* TMapPoint.h */,
-				2811F45F1DF7E5A6004D118A /* TMapPolygon.h */,
-				2811F4601DF7E5A6004D118A /* TMapPolyLine.h */,
-				2811F4611DF7E5A6004D118A /* TMapTapi.h */,
-				2811F4621DF7E5A6004D118A /* TMapType.h */,
-				2811F4631DF7E5A6004D118A /* TMapView.h */,
+				283C6F5F1E00F88300F33287 /* BizCategory.h */,
+				283C6F601E00F88300F33287 /* TMap.h */,
+				283C6F611E00F88300F33287 /* TMapAnnotation.h */,
+				283C6F621E00F88300F33287 /* TMapBaseView.h */,
+				283C6F631E00F88300F33287 /* TMapCircle.h */,
+				283C6F641E00F88300F33287 /* TMapGpsManager.h */,
+				283C6F651E00F88300F33287 /* TMapKatec.h */,
+				283C6F661E00F88300F33287 /* TMapMarkerItem.h */,
+				283C6F671E00F88300F33287 /* TMapMarkerItem2.h */,
+				283C6F681E00F88300F33287 /* TMapObject.h */,
+				283C6F691E00F88300F33287 /* TMapOverlayItem.h */,
+				283C6F6A1E00F88300F33287 /* TMapPathData.h */,
+				283C6F6B1E00F88300F33287 /* TMapPOIItem.h */,
+				283C6F6C1E00F88300F33287 /* TMapPoint.h */,
+				283C6F6D1E00F88300F33287 /* TMapPolygon.h */,
+				283C6F6E1E00F88300F33287 /* TMapPolyLine.h */,
+				283C6F6F1E00F88300F33287 /* TMapTapi.h */,
+				283C6F701E00F88300F33287 /* TMapType.h */,
+				283C6F711E00F88300F33287 /* TMapView.h */,
 			);
 			path = Headers;
 			sourceTree = "<group>";
 		};
-		2811F4641DF7E5A6004D118A /* Images */ = {
+		283C6F721E00F88300F33287 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				2811F4651DF7E5A6004D118A /* HeadingAngleSmall.png */,
-				2811F4661DF7E5A6004D118A /* HeadingAngleSmall@2x.png */,
-				2811F4671DF7E5A6004D118A /* icon_clustering.png */,
-				2811F4681DF7E5A6004D118A /* icon_clustering@2x.png */,
-				2811F4691DF7E5A6004D118A /* mapbg_tlogo.png */,
-				2811F46A1DF7E5A6004D118A /* mapbg_tlogo@2x.png */,
-				2811F46B1DF7E5A6004D118A /* poweredby.png */,
-				2811F46C1DF7E5A6004D118A /* poweredby@2x.png */,
-				2811F46D1DF7E5A6004D118A /* TrackingDot.png */,
-				2811F46E1DF7E5A6004D118A /* TrackingDot@2x.png */,
-				2811F46F1DF7E5A6004D118A /* TrackingDotHalo.png */,
-				2811F4701DF7E5A6004D118A /* TrackingDotHalo@2x.png */,
+				283C6F731E00F88300F33287 /* HeadingAngleSmall.png */,
+				283C6F741E00F88300F33287 /* HeadingAngleSmall@2x.png */,
+				283C6F751E00F88300F33287 /* icon_clustering.png */,
+				283C6F761E00F88300F33287 /* icon_clustering@2x.png */,
+				283C6F771E00F88300F33287 /* mapbg_tlogo.png */,
+				283C6F781E00F88300F33287 /* mapbg_tlogo@2x.png */,
+				283C6F791E00F88300F33287 /* poweredby.png */,
+				283C6F7A1E00F88300F33287 /* poweredby@2x.png */,
+				283C6F7B1E00F88300F33287 /* TrackingDot.png */,
+				283C6F7C1E00F88300F33287 /* TrackingDot@2x.png */,
+				283C6F7D1E00F88300F33287 /* TrackingDotHalo.png */,
+				283C6F7E1E00F88300F33287 /* TrackingDotHalo@2x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -285,7 +285,7 @@
 			children = (
 				287B24861DEED72600D654AA /* BicycleNew */,
 				287B24851DEED72600D654AA /* Products */,
-				2811F44F1DF7E5A6004D118A /* lib */,
+				283C6F5D1E00F88300F33287 /* lib */,
 				280372101DF0325500FDCC47 /* Frameworks */,
 				2DF487A8983E0CAAC65D22E1 /* Pods */,
 			);
@@ -425,21 +425,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2811F47C1DF7E5A6004D118A /* TrackingDotHalo.png in Resources */,
-				2811F47A1DF7E5A6004D118A /* TrackingDot.png in Resources */,
-				2811F4771DF7E5A6004D118A /* mapbg_tlogo@2x.png in Resources */,
-				2811F4741DF7E5A6004D118A /* icon_clustering.png in Resources */,
-				2811F47B1DF7E5A6004D118A /* TrackingDot@2x.png in Resources */,
-				2811F4721DF7E5A6004D118A /* HeadingAngleSmall.png in Resources */,
+				283C6F8A1E00F88300F33287 /* TrackingDotHalo.png in Resources */,
+				283C6F881E00F88300F33287 /* TrackingDot.png in Resources */,
+				283C6F851E00F88300F33287 /* mapbg_tlogo@2x.png in Resources */,
+				283C6F821E00F88300F33287 /* icon_clustering.png in Resources */,
+				283C6F891E00F88300F33287 /* TrackingDot@2x.png in Resources */,
+				283C6F801E00F88300F33287 /* HeadingAngleSmall.png in Resources */,
 				287B24921DEED72600D654AA /* LaunchScreen.storyboard in Resources */,
 				287B248F1DEED72600D654AA /* Assets.xcassets in Resources */,
-				2811F4781DF7E5A6004D118A /* poweredby.png in Resources */,
+				283C6F861E00F88300F33287 /* poweredby.png in Resources */,
 				287B248D1DEED72600D654AA /* Main.storyboard in Resources */,
-				2811F4761DF7E5A6004D118A /* mapbg_tlogo.png in Resources */,
-				2811F4731DF7E5A6004D118A /* HeadingAngleSmall@2x.png in Resources */,
-				2811F4791DF7E5A6004D118A /* poweredby@2x.png in Resources */,
-				2811F47D1DF7E5A6004D118A /* TrackingDotHalo@2x.png in Resources */,
-				2811F4751DF7E5A6004D118A /* icon_clustering@2x.png in Resources */,
+				283C6F841E00F88300F33287 /* mapbg_tlogo.png in Resources */,
+				283C6F811E00F88300F33287 /* HeadingAngleSmall@2x.png in Resources */,
+				283C6F871E00F88300F33287 /* poweredby@2x.png in Resources */,
+				283C6F8B1E00F88300F33287 /* TrackingDotHalo@2x.png in Resources */,
+				283C6F831E00F88300F33287 /* icon_clustering@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,7 +661,10 @@
 				);
 				INFOPLIST_FILE = BicycleNew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/BicycleNew/lib",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -692,7 +695,10 @@
 				);
 				INFOPLIST_FILE = BicycleNew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/BicycleNew/lib",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
