@@ -50,6 +50,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     var jsonString: String?
     
     var deviceToken: Data? = nil
+    var user : KOUser?
+    var doneSignup : Bool?
     
     fileprivate func requestMe(_ displayResult: Bool = false) {
         KOSessionTask.meTask { [weak self] (user, error) -> Void in
@@ -79,7 +81,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         navigationController2.pushViewController(viewController2, animated: true)
         self.mainViewController = navigationController2
         
-        self.realMainViewController = self.mainstoryboard.instantiateViewController(withIdentifier: "RevealView")
+        self.realMainViewController = storyboard.instantiateViewController(withIdentifier: "RevealView")
     }
     
     fileprivate func reloadRootViewController() {
