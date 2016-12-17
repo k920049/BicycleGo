@@ -28,6 +28,9 @@ class BicycleJoinViewController: UIViewController ,UIImagePickerControllerDelega
     var idCheck:Bool = false;
     var lastId:String="";
     
+    override func viewWillAppear(_ animated: Bool) {
+        requestMe();
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -122,10 +125,13 @@ class BicycleJoinViewController: UIViewController ,UIImagePickerControllerDelega
     
     
     fileprivate func requestMe(_ displayResult: Bool = false) {
+        print("321312")
         KOSessionTask.meTask { [weak self] (user, error) -> Void in
             if error != nil {
                 self?.showErrorMessage(error as! NSError)
                 self?.doneSignup = false
+                
+                print("123123")
             } else {
                 if displayResult {
                     UIAlertView.showMessage((user as! KOUser).description);
@@ -210,7 +216,7 @@ class BicycleJoinViewController: UIViewController ,UIImagePickerControllerDelega
                         print("weight:\(weight)")
                         print("sex:\(sexString)")
                         
-                        let jsonString = "{\"kakao\":\"aaa\",\"id\":\"\(id)\",\"age\":\"\(age)\",\"weight\":\"\(weight)\",\"sex\":\"\(sexString)\",\"image\":\"asd\"}"
+                        let jsonString = "{\"kakao\":\"\((self.user!.id)!)\",\"id\":\"\(id)\",\"age\":\"\(age)\",\"weight\":\"\(weight)\",\"sex\":\"\(sexString)\",\"image\":\"asd\"}"
                         
                         //let jsonString = "{\"kakao\":\"\((self.user!.id)!)\",\"id\":\"\(id)\",\"age\":\"\(age)\",\"weight\":\"\(weight)\",\"sex\":\"\(sexString)\",\"image\":\"asd\"}"
                         

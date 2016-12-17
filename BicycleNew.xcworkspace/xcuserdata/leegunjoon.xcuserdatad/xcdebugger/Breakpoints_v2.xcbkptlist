@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BicycleNew/BicycleJoinViewController.swift"
-            timestampString = "503667542.785024"
+            timestampString = "503668382.412901"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
             landmarkName = "signUp(_:)"
             landmarkType = "7">
          </BreakpointContent>
