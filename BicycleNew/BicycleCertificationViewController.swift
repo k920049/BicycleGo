@@ -33,7 +33,6 @@ class BicycleCertificationViewController: UIViewController {
     }
     */
     
-    @IBAction func close(segue:UIStoryboardSegue) {
-    }
+    
 
 }

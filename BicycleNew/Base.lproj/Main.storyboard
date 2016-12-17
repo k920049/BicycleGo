@@ -616,61 +616,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="OrB-xf-cQM" kind="relationship" relationship="rootViewController" id="gF2-Pc-FIj"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4nq-0z-i7C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="977" y="438"/>
         </scene>
-        <!--Bicycle Certification View Controller-->
-        <scene sceneID="Tre-Hn-YBH">
+        <!--Certification Table View Controller-->
+        <scene sceneID="FyM-HX-RI1">
             <objects>
-                <viewController id="Nlw-ao-MgC" customClass="BicycleCertificationViewController" customModule="BicycleNew" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ft8-O9-Nhb"/>
-                        <viewControllerLayoutGuide type="bottom" id="bz3-TV-3f8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fcm-vg-ztt">
+                <tableViewController id="OrB-xf-cQM" customClass="UICertificationTableViewController" customModule="BicycleNew" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="n4I-me-zr8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Certification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0IA-e1-2VY">
-                                <rect key="frame" x="123.5" y="148" width="128" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="8Uu-VH-Eac"/>
-                                    <constraint firstAttribute="width" constant="128" id="cBv-Rg-9KF"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="28"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4I-JA-V8c">
-                                <rect key="frame" x="123.5" y="269.5" width="128" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="X9i-JZ-vXU"/>
-                                    <constraint firstAttribute="width" constant="128" id="YOa-uz-a5K"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Button" image="focus"/>
-                                <connections>
-                                    <segue destination="A9D-gv-IAt" kind="presentation" id="AwN-FA-8PL"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="0IA-e1-2VY" firstAttribute="centerX" secondItem="fcm-vg-ztt" secondAttribute="centerX" id="3eh-Zh-8BH"/>
-                            <constraint firstItem="0IA-e1-2VY" firstAttribute="top" secondItem="ft8-O9-Nhb" secondAttribute="bottom" constant="128" id="eI6-lW-DaG"/>
-                            <constraint firstItem="Z4I-JA-V8c" firstAttribute="centerX" secondItem="fcm-vg-ztt" secondAttribute="centerX" id="fBu-rx-ez9"/>
-                            <constraint firstItem="Z4I-JA-V8c" firstAttribute="centerY" secondItem="fcm-vg-ztt" secondAttribute="centerY" id="kai-IB-LfQ"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="ANy-t5-NlB">
-                        <barButtonItem key="leftBarButtonItem" image="menu" id="2Hw-l6-VEW"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Au7-yB-Krv">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Au7-yB-Krv" id="j7C-FS-TC7">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="OrB-xf-cQM" id="W9a-lH-EYb"/>
+                            <outlet property="delegate" destination="OrB-xf-cQM" id="eVh-ew-i80"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="BWN-Et-QZI">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="9yz-pU-DUp"/>
                     </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qhc-Ol-O1y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="menuItem" destination="9yz-pU-DUp" id="eCz-gf-Hxp"/>
+                        <segue destination="A9D-gv-IAt" kind="presentation" id="tLm-qq-XVk"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xc6-fI-obt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2902" y="438"/>
+            <point key="canvasLocation" x="1974" y="438"/>
         </scene>
         <!--BicycleAV Camera View Controller-->
         <scene sceneID="ZdX-zc-VG6">
@@ -705,7 +694,7 @@
                                         </constraints>
                                         <state key="normal" image="cross"/>
                                         <connections>
-                                            <segue destination="rU6-vO-rv8" kind="unwind" unwindAction="closeWithSegue:" id="hFg-EG-uID"/>
+                                            <segue destination="rU6-vO-rv8" kind="unwind" unwindAction="closeWithSegue:" id="b2m-XK-3uy"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -735,7 +724,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7v-uY-AOv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="rU6-vO-rv8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3945" y="438"/>
+            <point key="canvasLocation" x="2966" y="438"/>
         </scene>
         <!--Item-->
         <scene sceneID="khH-sK-Ee7">
@@ -1123,7 +1112,6 @@
         <image name="Play" width="128" height="128"/>
         <image name="Rain" width="128" height="128"/>
         <image name="cross" width="24" height="24"/>
-        <image name="focus" width="128" height="128"/>
         <image name="info" width="250" height="250"/>
         <image name="kakaoTalkLocker" width="128" height="128"/>
         <image name="menu" width="22" height="22"/>
