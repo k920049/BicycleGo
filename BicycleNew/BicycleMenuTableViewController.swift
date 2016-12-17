@@ -9,12 +9,16 @@
 import UIKit
 
 class BicycleMenuTableViewController: UITableViewController {
-    fileprivate var user : KOUser? = nil
-    let group = DispatchGroup()
-    var userImage : UIImage? = nil
+    
     @IBOutlet var Image : UIImageView!
     @IBOutlet var idLabel : UILabel!
     
+    fileprivate var user : KOUser? = nil
+    let group = DispatchGroup()
+    var userImage : UIImage? = nil
+    let appDelegate  = UIApplication.shared.delegate as! AppDelegate
+    
+    var serviceID : String? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,52 +30,93 @@ class BicycleMenuTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         self.tableView.tableFooterView = UIView(frame: CGRect.zero)
         
-        self.requestMe()
+        self.user = self.appDelegate.user
         if let _user = self.user {
-            let ID = String(format: "%d", _user.id)
-            self.idLabel.text = ID
-            
-            let requestURLString = String(format: "kirkee2.cafe24.com/memberImage/%@.jpg", ID)
-            let searchUrl = URL(string: requestURLString)
-            let searchRequest = URLRequest(url: searchUrl!)
-            self.group.enter()
-            let searchTask = URLSession.shared.dataTask(with: searchRequest, completionHandler: {(data, response, error) -> Void in
+            if self.userImage == nil || self.serviceID == nil {
+                let ID_IN_INT64 = Int64(_user.id)
+                let ID = String(format: "%d", ID_IN_INT64)
+                let requestURLStringImage = String(format: "http://kirkee2.cafe24.com/memberImage/%@.jpg", ID)
+                let requestURLStringID = "http://kirkee2.cafe24.com/UserInfo.php"
                 
-                guard let _data = data else {
-                    if let error = error {
-                        let errorMessage : String = String(format: "Error: %@", error.localizedDescription)
-                        let errorAlertController = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .actionSheet)
-                        let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                        errorAlertController.addAction(cancelAction)
-                        errorAlertController.show()
-                    }
-                    return
-                }
-                if let userImageData = Data(base64Encoded: _data) {
-                    self.userImage = UIImage(data: userImageData)
-                }
-                self.group.leave()
-            })
-            searchTask.resume()
-            self.group.wait()
-            if let _userImage = self.userImage {
-                self.Image.image = _userImage
+                self.requestID(format: requestURLStringID, ID: ID)
+                self.requestImage(format: requestURLStringImage)
             }
         }
     }
     
-    fileprivate func requestMe(_ displayResult: Bool = false) {
-        KOSessionTask.meTask { [weak self] (user, error) -> Void in
-            if error != nil {
-                UIAlertView.showMessage((error?.localizedDescription)!)
-            } else {
-                if displayResult {
-                    UIAlertView.showMessage((user as! KOUser).description);
+    fileprivate func requestImage(format : String) -> Void {
+        
+        let searchUrl = URL(string: format)
+        let searchRequest = URLRequest(url: searchUrl!)
+        self.group.enter()
+        let searchTask = URLSession.shared.dataTask(with: searchRequest, completionHandler: {(data, response, error) -> Void in
+            
+            guard let _data = data else {
+                if let error = error {
+                    let errorMessage : String = String(format: "Error: %@", error.localizedDescription)
+                    let errorAlertController = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .actionSheet)
+                    let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    errorAlertController.addAction(cancelAction)
+                    errorAlertController.show()
                 }
-                
-                self?.user = (user as! KOUser)
+                return
             }
+            print(_data.base64EncodedData())
+            let imageData = Data(base64Encoded: _data.base64EncodedData(), options: Data.Base64DecodingOptions.ignoreUnknownCharacters)
+            if let _imageData = imageData {
+                self.userImage = UIImage(data: _imageData)
+            }
+            self.group.leave()
+        })
+        searchTask.resume()
+        self.group.wait()
+        if let _userImage = self.userImage {
+            self.Image.image = _userImage
+            self.Image.layer.cornerRadius = 32.0
+            self.Image.clipsToBounds = true
         }
+    }
+    
+    fileprivate func requestID(format : String, ID : String) -> Void {
+        let searchUrl = URL(string: format)
+        var searchRequest = URLRequest(url: searchUrl!)
+        let httpBody = String(format: "{ \"kakao\" : \"%@\" }", ID)
+        searchRequest.httpBody = httpBody.data(using: .utf8)
+        searchRequest.httpMethod = "POST"
+        
+        self.group.enter()
+        let searchTask = URLSession.shared.dataTask(with: searchRequest, completionHandler: {(data, response, error) -> Void in
+            
+            guard let _data = data else {
+                if let error = error {
+                    let errorMessage : String = String(format: "Error: %@", error.localizedDescription)
+                    let errorAlertController = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .actionSheet)
+                    let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    errorAlertController.addAction(cancelAction)
+                    errorAlertController.show()
+                }
+                return
+            }
+            
+            if let _data = data {
+                do {
+                    let jsonResult = try JSONSerialization.jsonObject(with: _data, options: JSONSerialization.ReadingOptions.mutableContainers) as? AnyObject
+                    let code = jsonResult?["code"] as? String
+                    let id = jsonResult?["id"] as? String
+                    if code != nil {
+                        if id != nil {
+                            self.serviceID = id!
+                            self.idLabel.text = self.serviceID
+                        }
+                    }
+                } catch {
+                    print(error)
+                }
+            }
+            self.group.leave()
+        })
+        searchTask.resume()
+        group.wait()
     }
 
     override func didReceiveMemoryWarning() {

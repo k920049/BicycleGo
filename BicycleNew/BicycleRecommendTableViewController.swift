@@ -10,6 +10,7 @@ import UIKit
 import Darwin
 
 class BicycleRecommendTableViewController: UITableViewController {
+    @IBOutlet var menuBar : UIBarButtonItem!
   
     var result : [ItemRoad]?
     var resultData : Data?
@@ -23,6 +24,8 @@ class BicycleRecommendTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        self.addSideBarMenu(leftMenuButton: menuBar)
         
         self.resultData = self.resultObject.search()
         if let _data = self.resultData {

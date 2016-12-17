@@ -61,6 +61,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
                 self?.doneSignup = true
                 self?.user = (user as! KOUser)
                 
+                print(self?.user?.id!)
+                
                 self?.jsonString = "{\"kakao\":\"\((self?.user!.id)!)\"}"
                 
                 self?.reloadRootViewController()
@@ -97,7 +99,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         }
         
         if(isOpened){
-            print("4444")
             let myUrl = URL(string: "http://kirkee2.cafe24.com/CheckLogin.php");
             
             var request = URLRequest(url:myUrl!)
@@ -125,7 +126,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
                             self.window?.rootViewController = self.mainViewController
                         }else{
                             DispatchQueue.main.async(){
-                                self.window?.rootViewController?.present(self.mainViewController!, animated: true, completion: nil)
+                                self.window?.rootViewController?.present(self.realMainViewController!, animated: true, completion: nil)
                             }
                         }
                     }
@@ -156,16 +157,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         
         /*
          ==================================================
-                    AppDelegate : application
-         ==================================================
-         Made by : 재성
-         Description :
-         * instantiate some of the initial settings of the application
-         
-         */
-        
-        /*
-         ==================================================
          AppDelegate : application
          ==================================================
          Made by : 건준
@@ -176,8 +167,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         setupEntryController()
         requestMe()
         
-        /////////
-        
+        /*
+         ==================================================
+         AppDelegate : application
+         ==================================================
+         Made by : 재성
+         Description :
+         * instantiate some of the initial settings of the application
+         
+         */
         // Update the navigation bar's font style and size
         if let barFont = UIFont(name: "Avenir-Light", size: 24.0) {
             UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white, NSFontAttributeName:barFont]
@@ -192,40 +190,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         
         self.locman?.delegate = self
     
-        
-        /*
-         ==================================================
-         AppDelegate : application
-         ==================================================
-         Made by : 건준
-         Description :
-         * instantiate some of the initial settings of the application
-         
-         */
-        /*
-        // 최초 실행시 2 종류의 rootViewController 를 준비한다.
-        setupEntryController()
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.kakaoSessionDidChangeWithNotification), name: NSNotification.Name.KOSessionDidChange, object: nil)
-        
-        reloadRootViewController()
-        
-        // notification
-        if #available(iOS 8.0, *) {
-            let types: UIUserNotificationType = [UIUserNotificationType.badge, UIUserNotificationType.alert, UIUserNotificationType.sound]
-            let settings: UIUserNotificationSettings = UIUserNotificationSettings(types: types, categories: nil)
-            
-            application.registerUserNotificationSettings(settings)
-            application.registerForRemoteNotifications()
-        } else {
-            application.registerForRemoteNotifications(matching: [UIRemoteNotificationType.badge, UIRemoteNotificationType.sound, UIRemoteNotificationType.alert])
-        }
-        
-        let session = KOSession.shared()
-        session?.presentedViewBarTintColor = UIColor(red: 0x2a / 255.0, green: 0x2a / 255.0, blue: 0x2a / 255.0, alpha: 1.0)
-        session?.presentedViewBarButtonTintColor = UIColor(red: 0xe5 / 255.0, green: 0xe5 / 255.0, blue: 0xe5 / 255.0, alpha: 1.0)
-        
-        */
         return true
     }
     

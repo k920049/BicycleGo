@@ -219,6 +219,7 @@ class BicycleMapViewController: UIViewController,
         let result = self.searchKeyword.search()
         if let _result = result {
             self.SKMapView?.removeAllTMapMarkerItems()
+            self.SKMapView?.setCenter(TMapPoint(lon: _result[0].longitude, lat: _result[0].latitude)!)
             
             for element in _result {
                 self.addMarker(title: element.title, subTitle: "Description", position: CLLocation(latitude: element.latitude, longitude: element.longitude))

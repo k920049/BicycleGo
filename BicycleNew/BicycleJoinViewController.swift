@@ -21,11 +21,8 @@ class BicycleJoinViewController: UIViewController ,UIImagePickerControllerDelega
     var naviController:UINavigationController?
     var strBase64:String = ""
     
-    
     fileprivate var doneSignup:Bool = false
     fileprivate var user:KOUser? = nil
-    
-    
     
     var sex:Int = 0;
     var idCheck:Bool = false;

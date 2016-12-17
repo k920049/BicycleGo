@@ -86,7 +86,31 @@ class BicycleAVCameraViewController: UIViewController, AVCaptureMetadataOutputOb
             qrCodeFrameView?.frame = barCodeObject!.bounds
             if metadataObj.stringValue != nil {
                 messageLabel.text = metadataObj.stringValue
+                let bodyString = String(format: "{ \"auth\" : \"%@\" }", metadataObj.stringValue)
                 
+                let queryString = "http://kirkee2.cafe24.com/AuthInfo.php"
+                let queryUrl = URL(string: queryString)
+                var queryRequest = URLRequest(url: queryUrl!)
+                queryRequest.httpMethod = "POST"
+                queryRequest.httpBody = bodyString.data(using: .utf8)
+                
+                let queryTask = URLSession.shared.dataTask(with: queryRequest, completionHandler: {(data, response, error) -> Void in
+                    
+                    guard let data = data else {
+                        if let error = error {
+                            let errorMessage : String = String(format: "Error: %@", error.localizedDescription)
+                            let errorAlertController = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .actionSheet)
+                            let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                            errorAlertController.addAction(cancelAction)
+                            errorAlertController.show()
+                        }
+                        return
+                    }
+                    
+                    print(String(data: data, encoding: .utf8))
+                })
+                
+                queryTask.resume()
             }
         }
     }
