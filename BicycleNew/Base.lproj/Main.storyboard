@@ -172,7 +172,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKN-4e-QGS">
-                                <rect key="frame" x="0.0" y="603" width="375" height="64"/>
+                                <rect key="frame" x="0.0" y="554" width="375" height="64"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sV-g4-bkU">
                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="64"/>
@@ -1132,6 +1132,6 @@
         <image name="setting" width="250" height="250"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QSg-23-HTv"/>
+        <segue reference="20z-ZD-Ci6"/>
     </inferredMetricsTieBreakers>
 </document>
