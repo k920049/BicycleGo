@@ -72,8 +72,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     }
     
     fileprivate func setupEntryController() {
-        
-        print("1")
+    
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let navigationController = storyboard.instantiateViewController(withIdentifier: "navigator") as! UINavigationController
         let navigationController2 = storyboard.instantiateViewController(withIdentifier: "navigator") as! UINavigationController
@@ -149,7 +148,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
             }
             task.resume()
         }else{
-            
             print("7")
             self.window?.rootViewController = self.loginViewController
         }
@@ -181,6 +179,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
          */
         setupEntryController()
         requestMe()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.kakaoSessionDidChangeWithNotification), name: NSNotification.Name.KOSessionDidChange, object: nil)
         
         /*
          ==================================================

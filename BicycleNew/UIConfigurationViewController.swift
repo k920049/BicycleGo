@@ -27,6 +27,7 @@ class UIConfigurationViewController: UIViewController {
     }
     
     @IBAction func logoutClicked(_ sender: UIButton) {
+        /*
         if sender == logoutButton {
             
             let errorMessage = "If you log out, it means you need to open the application again. Are you sure you want to log out?"
@@ -44,6 +45,14 @@ class UIConfigurationViewController: UIViewController {
             errorAlertController.addAction(cancelAction)
             
             self.present(errorAlertController, animated: true, completion: nil)
+        }
+         
+        */
+        KOSession.shared().logoutAndClose { [weak self] (success, error) -> Void in
+            _ = self?.navigationController?.popViewController(animated: true)
+            print("logout");
+            self?.dismiss(animated : false, completion: nil);
+            print("view dismiss");
         }
     }
     

@@ -95,8 +95,6 @@ class BicycleJoinViewController: UIViewController ,UIImagePickerControllerDelega
             
             //strBase64 = imageData.base64EncodedString(options: .lineLength64Characters)
             strBase64 = imageData.base64EncodedString()
-            
-            
         }else{
             print("Something went wrong")
         }
@@ -135,6 +133,8 @@ class BicycleJoinViewController: UIViewController ,UIImagePickerControllerDelega
                 
                 self?.doneSignup = true
                 self?.user = (user as! KOUser)
+                
+                print("\(self?.user)")
             }
         }
     }
@@ -204,9 +204,13 @@ class BicycleJoinViewController: UIViewController ,UIImagePickerControllerDelega
                         //print("인코드 ====== \(strBase64)")
                         
                         
-                        
+                        //print("kakao:\(self.user!.id)!)")
                         print("id:\(id)")
-                        let jsonString = "{\"kakao\":\"\((self.user!.id)!)\",\"id\":\"\(id)\",\"age\":\"\(age)\",\"weight\":\"\(weight)\",\"sex\":\"\(sexString)\",\"image\":\"\(strBase64)\"}"
+                        print("age:\(age)")
+                        print("weight:\(weight)")
+                        print("sex:\(sexString)")
+                        
+                        let jsonString = "{\"kakao\":\"aaa\",\"id\":\"\(id)\",\"age\":\"\(age)\",\"weight\":\"\(weight)\",\"sex\":\"\(sexString)\",\"image\":\"asd\"}"
                         
                         //let jsonString = "{\"kakao\":\"\((self.user!.id)!)\",\"id\":\"\(id)\",\"age\":\"\(age)\",\"weight\":\"\(weight)\",\"sex\":\"\(sexString)\",\"image\":\"asd\"}"
                         
