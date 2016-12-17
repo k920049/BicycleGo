@@ -364,7 +364,7 @@ class BicycleMainViewController: UIViewController {
         self.windspeed.reloadInputViews()
         self.chanceOfRain.text = String(format: "%d%%", newest.pop)
         self.chanceOfRain.reloadInputViews()
-        
+        self.calori.text = String(format: "%d kcal", Int(0.03 * traveledDistance))
         self.reloadInputViews()
         
     }

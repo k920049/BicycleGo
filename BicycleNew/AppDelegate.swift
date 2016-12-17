@@ -54,6 +54,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     var doneSignup : Bool?
     
     fileprivate func requestMe(_ displayResult: Bool = false) {
+        
+        print("10")
         KOSessionTask.meTask { [weak self] (user, error) -> Void in
             if error != nil {
                 self?.reloadRootViewController()
@@ -61,9 +63,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
                 self?.doneSignup = true
                 self?.user = (user as! KOUser)
                 
-                print(self?.user?.id!)
-                
                 self?.jsonString = "{\"kakao\":\"\((self?.user!.id)!)\"}"
+               
                 
                 self?.reloadRootViewController()
             }
@@ -71,6 +72,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     }
     
     fileprivate func setupEntryController() {
+        
+        print("1")
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let navigationController = storyboard.instantiateViewController(withIdentifier: "navigator") as! UINavigationController
         let navigationController2 = storyboard.instantiateViewController(withIdentifier: "navigator") as! UINavigationController
@@ -87,8 +90,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     }
     
     fileprivate func reloadRootViewController() {
+        
+        print("2")
         let isOpened = KOSession.shared().isOpen()
         if !isOpened {
+            
+            print("3")
             let mainViewController = self.mainViewController as! UINavigationController
             
             let stack = mainViewController.viewControllers
@@ -99,6 +106,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         }
         
         if(isOpened){
+            
+            print("4")
             let myUrl = URL(string: "http://kirkee2.cafe24.com/CheckLogin.php");
             
             var request = URLRequest(url:myUrl!)
@@ -124,7 +133,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
                         
                         if(Int(codeRespond)! == 1){
                             self.window?.rootViewController = self.mainViewController
+                            
+                            print("5")
                         }else{
+                            
+                            print("6")
                             DispatchQueue.main.async(){
                                 self.window?.rootViewController?.present(self.realMainViewController!, animated: true, completion: nil)
                             }
@@ -136,6 +149,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
             }
             task.resume()
         }else{
+            
+            print("7")
             self.window?.rootViewController = self.loginViewController
         }
         
@@ -296,10 +311,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         }
         // Update flag whether it's good to go
         self.accuracy = self.lastLocation?.horizontalAccuracy
-        print("Loop")
         if self.flag {
             if self.accuracy! >= 0 && self.accuracy! < REQ_ACC {
-                print("Done")
                 self.flag = false
             }
         }
