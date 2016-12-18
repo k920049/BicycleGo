@@ -17,7 +17,10 @@ class BicycleAVCameraViewController: UIViewController, AVCaptureMetadataOutputOb
     var captureSession:AVCaptureSession?
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
     var qrCodeFrameView:UIView?
-
+    
+    fileprivate var user : KOUser?
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -85,32 +88,37 @@ class BicycleAVCameraViewController: UIViewController, AVCaptureMetadataOutputOb
             let barCodeObject = videoPreviewLayer?.transformedMetadataObject(for: metadataObj)
             qrCodeFrameView?.frame = barCodeObject!.bounds
             if metadataObj.stringValue != nil {
-                messageLabel.text = metadataObj.stringValue
-                let bodyString = String(format: "{ \"auth\" : \"%@\" }", metadataObj.stringValue)
+                self.user = self.appDelegate.user
                 
-                let queryString = "http://kirkee2.cafe24.com/AuthInfo.php"
-                let queryUrl = URL(string: queryString)
-                var queryRequest = URLRequest(url: queryUrl!)
-                queryRequest.httpMethod = "POST"
-                queryRequest.httpBody = bodyString.data(using: .utf8)
-                
-                let queryTask = URLSession.shared.dataTask(with: queryRequest, completionHandler: {(data, response, error) -> Void in
+                if self.user != nil {
+                    let bodyString = String(format: "{\"kakao\":\"%@\",\"auth\" : \"%@\" }", (self.user?.id)!, metadataObj.stringValue)
                     
-                    guard let data = data else {
-                        if let error = error {
-                            let errorMessage : String = String(format: "Error: %@", error.localizedDescription)
-                            let errorAlertController = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .actionSheet)
-                            let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                            errorAlertController.addAction(cancelAction)
-                            errorAlertController.show()
+                    let queryString = "http://kirkee2.cafe24.com/AuthCheck.php"
+                    let queryUrl = URL(string: queryString)
+                    var queryRequest = URLRequest(url: queryUrl!)
+                    queryRequest.httpMethod = "POST"
+                    queryRequest.httpBody = bodyString.data(using: .utf8)
+                    
+                    let queryTask = URLSession.shared.dataTask(with: queryRequest, completionHandler: {(data, response, error) -> Void in
+                        
+                        guard let data = data else {
+                            if let error = error {
+                                let errorMessage : String = String(format: "Error: %@", error.localizedDescription)
+                                let errorAlertController = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .actionSheet)
+                                let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                                errorAlertController.addAction(cancelAction)
+                                errorAlertController.show()
+                            }
+                            return
                         }
-                        return
-                    }
-                    
-                    print(String(data: data, encoding: .utf8))
-                })
-                
-                queryTask.resume()
+                        print(String(data: data, encoding: .utf8))
+                        DispatchQueue.main.async {
+                            self.messageLabel.text = "인증완료"
+                        }
+                        
+                    })
+                    queryTask.resume()
+                }
             }
         }
     }

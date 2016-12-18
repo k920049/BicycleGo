@@ -48,9 +48,7 @@ class BicycleLoginViewController: UIViewController, UIAlertViewDelegate{
                         break;
                 }
             }
-            if error != nil {
-                self.appDelegate.requestMe()
-            }
+           
         }, authParams: nil, authTypes: [NSNumber(value: KOAuthType.talk.rawValue), NSNumber(value: KOAuthType.account.rawValue)])
     }
 

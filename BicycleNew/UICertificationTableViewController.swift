@@ -35,6 +35,7 @@ class UICertificationTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         requestMe()
+        self.tableView.reloadData()
     }
     
     
@@ -44,12 +45,15 @@ class UICertificationTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.addSideBarMenu(leftMenuButton: menuItem)
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action:
             #selector(showMap))
         qrCode.isUserInteractionEnabled = true
         qrCode.addGestureRecognizer(tapGestureRecognizer)
+        
+        
         
     
         
@@ -384,6 +388,9 @@ class UICertificationTableViewController: UITableViewController {
         rowAuth.removeAll()
         rowTitle.removeAll()
         rowId.removeAll()
+    }
+    
+    @IBAction func close(segue:UIStoryboardSegue) {
     }
     
     

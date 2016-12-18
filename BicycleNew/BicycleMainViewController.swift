@@ -290,6 +290,8 @@ class BicycleMainViewController: UIViewController {
             self.timeAccumulated.text = "\(self.timeText(h)):\(self.timeText(m)):\(self.timeText(s))"
         })
         distanceAccumulated.text = String(format: "%f m", 0.0)
+        
+        self.locman?.startUpdatingLocation()
     }
     
     func updateCounter() {

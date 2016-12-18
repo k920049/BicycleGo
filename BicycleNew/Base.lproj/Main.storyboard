@@ -803,7 +803,7 @@
                                         </constraints>
                                         <state key="normal" image="cross"/>
                                         <connections>
-                                            <segue destination="rU6-vO-rv8" kind="unwind" unwindAction="closeWithSegue:" id="b2m-XK-3uy"/>
+                                            <segue destination="rU6-vO-rv8" kind="unwind" unwindAction="closeWithSegue:" id="cM5-zb-gRW"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1233,10 +1233,6 @@
         <image name="setting" width="250" height="250"/>
     </resources>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
         <segue reference="QSg-23-HTv"/>
-=======
-        <segue reference="pOQ-l9-HO6"/>
->>>>>>> 290e3c5e011116b13365c2a5770b9aeaa2445d56
     </inferredMetricsTieBreakers>
 </document>
