@@ -216,7 +216,7 @@ class BicycleJoinViewController: UIViewController ,UIImagePickerControllerDelega
                         print("weight:\(weight)")
                         print("sex:\(sexString)")
                         
-                        let jsonString = "{\"kakao\":\"\((self.user!.id)!)\",\"id\":\"\(id)\",\"age\":\"\(age)\",\"weight\":\"\(weight)\",\"sex\":\"\(sexString)\",\"image\":\"asd\"}"
+                        let jsonString = "{\"kakao\":\"\((self.user!.id)!)\",\"id\":\"\(id)\",\"age\":\"\(age)\",\"weight\":\"\(weight)\",\"sex\":\"\(sexString)\",\"image\":\"\(strBase64)\"}"
                         
                         //let jsonString = "{\"kakao\":\"\((self.user!.id)!)\",\"id\":\"\(id)\",\"age\":\"\(age)\",\"weight\":\"\(weight)\",\"sex\":\"\(sexString)\",\"image\":\"asd\"}"
                         

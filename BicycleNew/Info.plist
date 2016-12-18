@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Need camera accces to certify your travel</string>
-	<key>KAKAO_APP_KEY</key>
-	<string>22e4cd3523b03f9529c7f5434001f9cc</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -33,6 +29,18 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>KAKAO_APP_KEY</key>
+	<string>22e4cd3523b03f9529c7f5434001f9cc</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>kakao22e4cd3523b03f9529c7f5434001f9cc</string>
+		<string>kakaokompassauth</string>
+		<string>storykompassauth</string>
+		<string>kakaolink</string>
+		<string>kakaotalk-4.5.0</string>
+		<string>kakaostory-2.9.0</string>
+		<string>storylink</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -111,6 +119,8 @@
 	<string>Need camera accces to certify your travel</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>앱이 사용자의 현재 위치를 찾기 위해 필요합니다.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Need camera accces to certify your travel</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -124,16 +134,6 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-    	<string>kakao22e4cd3523b03f9529c7f5434001f9cc</string>
-    	<string>kakaokompassauth</string>
-    	<string>storykompassauth</string>
-    	<string>kakaolink</string>
-    	<string>kakaotalk-4.5.0</string>
-    	<string>kakaostory-2.9.0</string>
-    	<string>storylink</string>
 	</array>
 </dict>
 </plist>

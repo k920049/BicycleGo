@@ -9,7 +9,8 @@
 import UIKit
 
 class UICertificationTableViewCell: UITableViewCell {
-    @IBOutlet var labelName : UILabel!
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var titleImage: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

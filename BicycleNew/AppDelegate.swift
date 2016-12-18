@@ -90,7 +90,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     
     fileprivate func reloadRootViewController() {
         
-        print("2")
         let isOpened = KOSession.shared().isOpen()
         if !isOpened {
             
@@ -148,7 +147,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
             }
             task.resume()
         }else{
-            print("7")
             self.window?.rootViewController = self.loginViewController
         }
         
