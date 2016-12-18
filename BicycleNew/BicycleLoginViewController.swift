@@ -12,6 +12,8 @@ class BicycleLoginViewController: UIViewController, UIAlertViewDelegate{
 
     @IBOutlet weak var loginButton: UIButton!
     
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -39,12 +41,15 @@ class BicycleLoginViewController: UIViewController, UIAlertViewDelegate{
             
             if !session.isOpen() {
                 switch ((error as! NSError).code) {
-                case Int(KOErrorCancelled.rawValue):
-                    break;
-                default:
-                    UIAlertView(title: "에러", message: error?.localizedDescription, delegate: nil, cancelButtonTitle: "확인").show()
-                    break;
+                    case Int(KOErrorCancelled.rawValue):
+                        break;
+                    default:
+                        UIAlertView(title: "에러", message: error?.localizedDescription, delegate: nil, cancelButtonTitle: "확인").show()
+                        break;
                 }
+            }
+            if error != nil {
+                self.appDelegate.requestMe()
             }
         }, authParams: nil, authTypes: [NSNumber(value: KOAuthType.talk.rawValue), NSNumber(value: KOAuthType.account.rawValue)])
     }

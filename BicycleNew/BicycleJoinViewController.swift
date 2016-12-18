@@ -203,20 +203,20 @@ class BicycleJoinViewController: UIViewController ,UIImagePickerControllerDelega
                             return;
                         }
                         
-                        //let strBase64:String = imageData.base64EncodedStringWithOptions(.Encoding64CharacterLineLength)
+                        //let strBase64:String = imageData.base64EncodedStringWithOptions(.Encoding64CharacterLineLegth)
                         
                         //UIAlertView.showMessage("{\"kakao\":\"\((self.user!.id)!)\",\"id\":\"\(id)\",\"age\":\"\(age)\",\"weight\":\"\(weight)\",\"sex\":\"\(sexString)\",\"image\":\"\(strBase64)\"}")
                         
                         //print("인코드 ====== \(strBase64)")
                         
                         
-                        //print("kakao:\(self.user!.id)!)")
+                        print("kakao:\(self.user!.id)!)")
                         print("id:\(id)")
                         print("age:\(age)")
                         print("weight:\(weight)")
                         print("sex:\(sexString)")
                         
-                        let jsonString = "{\"kakao\":\"\((self.user!.id)!)\",\"id\":\"\(id)\",\"age\":\"\(age)\",\"weight\":\"\(weight)\",\"sex\":\"\(sexString)\",\"image\":\"asd\"}"
+                        let jsonString = "{\"kakao\":\"\((self.user!.id)!)\",\"id\":\"\(id)\",\"age\":\"\(age)\",\"weight\":\"\(weight)\",\"sex\":\"\(sexString)\",\"image\":\"\(strBase64)\"}"
                         
                         //let jsonString = "{\"kakao\":\"\((self.user!.id)!)\",\"id\":\"\(id)\",\"age\":\"\(age)\",\"weight\":\"\(weight)\",\"sex\":\"\(sexString)\",\"image\":\"asd\"}"
                         
