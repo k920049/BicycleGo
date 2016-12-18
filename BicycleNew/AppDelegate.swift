@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     var SKMapView : TMapView?
     var manageHolder : ManagerHolder?
     let executionGroup = DispatchGroup()    // Semaphore when figuring out whether it's good to go
+    let kakaoGroup = DispatchGroup()
     
     var startLocation : CLLocation?
     var lastLocation : CLLocation?
@@ -53,22 +54,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     var user : KOUser?
     var doneSignup : Bool?
     
-    fileprivate func requestMe(_ displayResult: Bool = false) {
-        
-        print("10")
-        KOSessionTask.meTask { [weak self] (user, error) -> Void in
-            if error != nil {
-                self?.reloadRootViewController()
-            } else {
-                self?.doneSignup = true
-                self?.user = (user as! KOUser)
-                
-                self?.jsonString = "{\"kakao\":\"\((self?.user!.id)!)\"}"
-               
-                
-                self?.reloadRootViewController()
+    func requestMe(_ displayResult: Bool = false) {
+        self.kakaoGroup.enter()
+        KOSessionTask.meTask(completionHandler: {(user, error) -> Void in
+            if error == nil {
+                self.doneSignup = true
+                self.user = (user as! KOUser)
+                self.jsonString = "{\"kakao\":\"\((self.user!.id)!)\"}"
             }
-        }
+            self.kakaoGroup.leave()
+        })
+        self.kakaoGroup.wait()
     }
     
     fileprivate func setupEntryController() {
@@ -89,53 +85,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     }
     
     fileprivate func reloadRootViewController() {
+<<<<<<< HEAD
         
+=======
+ 
+>>>>>>> 290e3c5e011116b13365c2a5770b9aeaa2445d56
         let isOpened = KOSession.shared().isOpen()
         if !isOpened {
-            
-            print("3")
             let mainViewController = self.mainViewController as! UINavigationController
-            
             let stack = mainViewController.viewControllers
+            
             for i in 0 ..< stack.count {
                 print(NSString(format: "[%d]: %@", i, stack[i] as UIViewController))
             }
             mainViewController.popToRootViewController(animated: true)
         }
-        
-        if(isOpened){
-            
-            print("4")
+        if isOpened {
             let myUrl = URL(string: "http://kirkee2.cafe24.com/CheckLogin.php");
-            
             var request = URLRequest(url:myUrl!)
-            
             request.httpMethod = "POST"// Compose a query string
-            
             request.httpBody = jsonString?.data(using: String.Encoding.utf8, allowLossyConversion: true)
-            
+            kakaoGroup.enter()
             let task = URLSession.shared.dataTask(with: request) { (data: Data?, response: URLResponse?, error: Error?) in
                 
-                if error != nil
-                {
+                if error != nil {
                     return
                 }
-                
                 do {
                     let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? NSDictionary
-                    
                     if let parseJSON = json {
-                        
                         // Now we can access value of First Name by its key
                         let codeRespond:String = parseJSON["code"] as! String
-                        
                         if(Int(codeRespond)! == 1){
                             self.window?.rootViewController = self.mainViewController
-                            
-                            print("5")
-                        }else{
-                            
-                            print("6")
+                        } else{
                             DispatchQueue.main.async(){
                                 self.window?.rootViewController?.present(self.realMainViewController!, animated: true, completion: nil)
                             }
@@ -144,12 +127,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
                 } catch {
                     print(error)
                 }
+                self.kakaoGroup.leave()
             }
             task.resume()
+<<<<<<< HEAD
         }else{
+=======
+            kakaoGroup.wait()
+        } else{
+>>>>>>> 290e3c5e011116b13365c2a5770b9aeaa2445d56
             self.window?.rootViewController = self.loginViewController
         }
-        
         self.window?.makeKeyAndVisible()
     }
     
@@ -176,7 +164,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
          
          */
         setupEntryController()
-        requestMe()
+        reloadRootViewController()
         
         NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.kakaoSessionDidChangeWithNotification), name: NSNotification.Name.KOSessionDidChange, object: nil)
         
@@ -311,6 +299,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         self.accuracy = self.lastLocation?.horizontalAccuracy
         if self.flag {
             if self.accuracy! >= 0 && self.accuracy! < REQ_ACC {
+                print("hit")
                 self.flag = false
             }
         }

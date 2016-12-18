@@ -1233,6 +1233,10 @@
         <image name="setting" width="250" height="250"/>
     </resources>
     <inferredMetricsTieBreakers>
+<<<<<<< HEAD
         <segue reference="QSg-23-HTv"/>
+=======
+        <segue reference="pOQ-l9-HO6"/>
+>>>>>>> 290e3c5e011116b13365c2a5770b9aeaa2445d56
     </inferredMetricsTieBreakers>
 </document>
